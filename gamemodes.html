@@ -1,0 +1,75 @@
+<style>
+    html, body{
+        width:100%;
+        height:100%;
+        background-color:rgb(0, 35, 66);
+        overflow: hidden;
+        color: #ff6bc2;
+        font-family: sans-serif;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    table, th, tr{
+        border: 1px double;
+        font-weight: 500;
+    }
+    table{
+        width: 75%;
+        height: 50%;
+    }
+    .today{
+        background-color: rgba(0,0,0,0.3);
+    }
+    th:first-child, .days > *{
+        background-color: rgba(255,255,255,0.05);
+        font-weight: 900;
+    }
+</style>
+<title>Woomy Gamemode Rotation</title>
+<h1>
+    Woomy Daily Gamemode Rotation
+</h1>
+<table id="table">
+    <tr class="days">
+        <th></th>
+        <th>Sunday</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+    </tr>
+</table>
+<h6>Click on any cell to edit it, keep in mind this is only visual, it wont affect the actual gamemode rotation</h6>
+<script>
+    let table = document.getElementById("table")
+    fetch("https://woomy-api.glitch.me/rotationData").then(res=>res.json()).then((data)=>{
+        data.labels.shift() // Development server placeholder
+        let i = 0;
+        data.labels.forEach(server => {
+            let tr = document.createElement("tr")
+            let th = document.createElement("th")
+            th.innerHTML = `Server ${++i}`
+            tr.appendChild(th)
+            let a = 0;
+            server.forEach(label=>{
+                th = document.createElement("th")
+                th.contentEditable = true
+                th.innerHTML = label
+                if(data.day===a++){
+                    th.classList.add("today")
+                }
+                tr.appendChild(th)
+            })
+            table.appendChild(tr)
+        });
+    }).catch((err)=>{ 
+        console.error(err)
+        alert("Failed to find the servers, the woomy API might be down (let a developer know). Please try reloading the page!")
+    })
+</script>

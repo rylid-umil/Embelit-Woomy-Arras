@@ -1,0 +1,250 @@
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Rubik+80s+Fade&family=Alfa+Slab+One&family=Bebas+Neue&family=Bungee&family=Cutive+Mono&family=Dancing+Script:wght@500&family=Fredoka+One&family=Indie+Flower&family=Merienda&family=Nanum+Brush+Script&family=Neonderthaw&family=Pacifico&family=Passion+One&family=Permanent+Marker&family=Rampart+One&family=Roboto+Mono:wght@500&family=Share+Tech+Mono&family=Syne+Mono&family=Ubuntu:wght@400;700&family=Zen+Dots&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            font-family: Ubuntu;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            background: url(/resources/background_light.svg);
+            background-size: auto 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .banner{
+            margin: 10px;
+            padding: 5px;
+            width: 75%;
+            min-height: 20%;
+            background-color: #8ABB44;
+            border-color: #000000;
+            border-style: solid;
+            border-width: 3px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .pluginDiv{
+            width: 75%;
+            min-height: 15%;
+            max-height: 15%;
+            margin: 10px;
+            padding: 5px;
+            /*background-color: #d3d3d3; Defined in js */ 
+            border-color: #000000;
+            border-style: solid;
+            border-width: 3px;
+            border-radius: 10px;
+            display: flex;
+        }
+        .pluginSectionHolder1, .pluginSectionHolder2{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        .pluginSectionHolder2{
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        .pluginTitle{
+            display: inline-block;
+            margin: 5px;
+            color: black;
+            font-size: x-large;
+            border-image: linear-gradient(90deg, rgb(155, 155, 155), #00000000) 30;
+            border-bottom-style: solid;
+        }
+        .pluginAuthor{
+            color: grey;
+            font-size: large;
+        }
+        .pluginDescription{
+            color: black;
+            direction: rtl;
+            text-align: end;
+        }
+        .pluginImage{
+            height: 100%;
+            width: auto;
+            max-width: 73.25%;
+            border-color: #000000;
+            border-style: solid;
+            border-width: 1px;
+        }
+        .pluginInstallButton{
+            width: 25%;
+            height: 100%;
+            color: black;
+            border-style: solid;
+            border-radius: 5px;
+            background-color: darkgrey;
+        }
+        .pluginInstallButton:hover{
+            scale: 1.025;
+            filter: brightness(1.1);
+        }
+        .pluginInstallButton:active{
+            scale: 0.985;
+            filter: brightness(0.9);
+        }
+        a{
+            color: darkslategrey;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let dataList = [
+            {
+                title: "Woomy Translator",
+                description: `
+                !Translates woomy in real time<br>
+                .This script uses the google translate API, so it likely will not be perfect but it is better than nothing<br>
+                .You can set the language in the options menu
+                `,
+                image: "https://greasyfork.org/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNVM4QVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--d5a6bfeb85dc9f9a3e91c1929db72ec891977ef1/1.png",
+                url: "https://greasyfork.org/scripts/471013-woomy-translator/code/Woomy%20Translator.user.js",
+                author: "PowfuArras",
+                authorUrl: "https://greasyfork.org/en/users/951187-powfuarras"
+            },
+            {
+                title: "Woomy Custom Theme Support",
+                description: `
+                Allows you to create custom themes for woomy<br>
+                .Please be aware that theme names cannot conflict with builtins or woomy themes<br>
+                .To make a theme, create a theme at <a href="https://codepen.io/road-to-100k/full/GRpvMzb" target="_blank">Road's arras.io theme maker</a> and then import the theme code in woomy
+                `,
+                image: "https://greasyfork.org/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeEc5QVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--c44af5284884886f696bcda7a2c7b11d43fbf422/1.png",
+                url: "https://greasyfork.org/scripts/471170-woomy-custom-theme-support/code/Woomy%20Custom%20Theme%20Support.user.js",
+                author: "PowfuArras",
+                authorUrl: "https://greasyfork.org/en/users/951187-powfuarras"
+            },
+            {
+                title: "Woomy Additional Emojis",
+                description: `
+                !Adds additional emojis to woomy chat<br>
+                .You can choose to omit spaces, or include spaces. Same with underscores<br>
+                .You type emojis as such, and they will automatically convert if the code is valid<br>
+                💯Hello World :100: -> Hello World <br>
+                .You can find a full list of supported emojis <a href="https://greasyfork.org/en/scripts/471246-woomy-additional-emojis" target="_blank">here</a>
+                `,
+                image: "https://media.discordapp.net/attachments/759227151605825546/1133446644063555685/0oOlOqB.png",
+                url: "https://greasyfork.org/scripts/471246-woomy-additional-emojis/code/Woomy%20Additional%20Emojis.user.js",
+                author: "PowfuArras",
+                authorUrl: "https://greasyfork.org/en/users/951187-powfuarras"
+            },
+            {
+                title: "Legacy Random Tank Buttom",
+                description: `
+                .Reimplements the random tank button
+                `,
+                image: "https://media.discordapp.net/attachments/1112165525640990730/1147281373460185220/zNLlHy1.png",
+                url: "https://greasyfork.org/scripts/472297-legacy-random-tank-button/code/Legacy%20Random%20Tank%20Button.user.js",
+                author: "PowfuArras",
+                authorUrl: "https://greasyfork.org/en/users/951187-powfuarras"
+            },
+            {
+                title: "High Resolution Screenshotter",
+                description: `
+                .Allows you to take screenshots of higher than normal quality by pressing SHIFT + N
+                `,
+                image: "https://media.discordapp.net/attachments/1112165525640990730/1147282247314063391/zHzwDz9.png?width=1054&height=628",
+                url: "https://greasyfork.org/scripts/471959-woomy-high-resolution-screenshotter/code/Woomy%20High%20Resolution%20Screenshotter.user.js",
+                author: "PowfuArras",
+                authorUrl: "https://greasyfork.org/en/users/951187-powfuarras"
+            }
+        ].reverse()
+        for(let data of dataList){
+            createNewScriptBlock(data)
+        }
+        window.scrollTo(NaN, NaN) // Hacky way to scroll to the direct top
+        function createNewScriptBlock(data){
+            //// Entire container
+            let mainDiv = document.createElement("div")
+            mainDiv.classList.add("pluginDiv")
+            mainDiv.style.background = `linear-gradient(to right, #d3d3d3FF, #d3d3d3FF, #d3d3d3CC, #d3d3d300), ${data.image?`url(${data.image})`:"#d3d3d3"}`
+            mainDiv.style.backgroundSize = "100% auto"
+            //mainDiv.style.backgroundPositionX = "50%"
+            mainDiv.style.backgroundPositionY = "50%"
+            document.body.appendChild(mainDiv)
+
+            //// pluginSectionHolder 1
+            let pluginSectionHolder1 = document.createElement("div")
+            pluginSectionHolder1.classList.add("pluginSectionHolder1")
+            mainDiv.appendChild(pluginSectionHolder1)
+
+            //// The title
+            let title = document.createElement("p")
+            title.classList.add("pluginTitle")
+            title.innerHTML = data.title
+            let author = document.createElement("span")
+            author.classList.add("pluginAuthor")
+            author.innerHTML = " by "
+            let authorLink = document.createElement("a")
+            authorLink.classList.add("pluginAuthor")
+            authorLink.href = data.authorUrl
+            authorLink.target = "_blank"
+            authorLink.innerHTML = data.author
+            author.appendChild(authorLink)
+            title.appendChild(author)
+            pluginSectionHolder1.appendChild(title)
+
+            //// Description
+            let description = document.createElement("p")
+            description.classList.add("pluginDescription")
+            description.style.width = window.getComputedStyle(title).width
+            description.innerHTML = data.description
+            pluginSectionHolder1.appendChild(description)
+            // Make the description scrollable if needed
+            let titleHeight = Number(window.getComputedStyle(title).height.slice(0, -2)) 
+            let descriptionHeight = Number(window.getComputedStyle(description).height.slice(0, -2))
+            let mainDivHeight = Number(window.getComputedStyle(mainDiv).height.slice(0, -2))
+            if((titleHeight+descriptionHeight) > mainDivHeight){
+                description.style.height = `${(mainDivHeight-titleHeight)-15}px`
+                description.style.overflowY = "scroll"
+            }
+
+            //// pluginSectionHolder 2
+            let pluginSectionHolder2 = document.createElement("div")
+            pluginSectionHolder2.classList.add("pluginSectionHolder2")
+            mainDiv.appendChild(pluginSectionHolder2)
+
+            // Image
+            /*let image = document.createElement("img")
+            image.classList.add("pluginImage")
+            image.src = data.image
+            if(!data.image) image.style.opacity = 0;
+            pluginSectionHolder2.appendChild(image)*/
+
+            // Install button
+            let installButton = document.createElement("button")
+            installButton.classList.add("pluginInstallButton")
+            installButton.innerHTML = "Install"
+            installButton.onclick = () => {
+                let newWindow = window.open(data.url);
+                newWindow.document.write("Loading...")
+                setTimeout(()=>{
+                    newWindow.document.body.innerHTML = `To install plugins you must install Tamper Monkey or a related tool. Tamper Monkey allows you to run code upon visiting sites (like woomy) which is how plugins function. You can find Tamper Monkey here: <a href="https://www.tampermonkey.net/">https://www.tampermonkey.net/</a>`
+                }, 1000)
+                newWindow.onblur = () => {
+                    newWindow.close()
+                }
+            }
+            pluginSectionHolder2.appendChild(installButton)
+        }
+    </script>
+
+    <div class="banner">
+        <h1 style="font-size: 40px;">Plugins</h1>
+        <p>All of these plugins require <a href="https://www.tampermonkey.net/">Tamper Monkey</a> or a similar tool and have been approved manually. However, keep in mind, we cannot constantly monitor updates and changes. <b>This means you must use caution when installing plugins, they can steal your data.</b> If you would like your own plugin here contact the devs, theres no offical plugin api yet.</p>
+    </div>
+</body>
