@@ -1,0 +1,1 @@
+When dealing with conflicts for mockups.json, always do accept incoming change. You will regenerate them later when you next run the server.

@@ -1,0 +1,714 @@
+{
+    "welcome_to_the_game": {
+        "title": "Welcome to the game",
+        "description": "Connect to the game for the first time",
+        "tier": 1
+    },
+    "personalization": {
+        "title": "Personalization",
+        "description": "Change something in the options menu",
+        "tier": 1
+    },
+    "its_better_for_my_eyes": {
+        "title": "Its better for my eyes",
+        "description": "Turn on dark mode",
+        "tier": 1
+    },
+    "like_minecraft_shaders_no": {
+        "title": "Like minecraft shaders? (No)",
+        "description": "Enable any shader option",
+        "tier": 1
+    },
+    "back_to_default": {
+        "title": "Back to default",
+        "description": "Reset all options to the default values",
+        "tier": 1
+    },
+    "artificial_lag": {
+        "title": "Artificial-lag",
+        "description": "Set your client's max FPS to 1",
+        "tier": 1
+    },
+    "woo_you_killed_someone": {
+        "title": "Woo you killed someone",
+        "description": "Get your first kill",
+        "tier": 1,
+        "precentageData": [
+            0,
+            1
+        ]
+    },
+    "still_single_digits": {
+        "title": "Still single digits",
+        "description": "Get 5 kills",
+        "tier": 1,
+        "precentageData": [
+            0,
+            5
+        ]
+    },
+    "only_ten": {
+        "title": "Only ten?",
+        "description": "Get 10 kills",
+        "tier": 1,
+        "precentageData": [
+            0,
+            10
+        ]
+    },
+    "okay_that_is_something": {
+        "title": "Okay, that is something",
+        "description": "Get 50 kills",
+        "tier": 2,
+        "precentageData": [
+            0,
+            50
+        ]
+    },
+    "got_good": {
+        "title": "Got good",
+        "description": "Get 100 kills",
+        "tier": 2,
+        "precentageData": [
+            0,
+            100
+        ]
+    },
+    "okay_you_are_scaring_me": {
+        "title": "Okay, you are scaring me",
+        "description": "Get 250 kills",
+        "tier": 3,
+        "precentageData": [
+            0,
+            250
+        ]
+    },
+    "genocide": {
+        "title": "Genocide",
+        "description": "Get 500 kills",
+        "tier": 3,
+        "precentageData": [
+            0,
+            500
+        ]
+    },
+    "genocide_ii": {
+        "title": "Genocide II",
+        "description": "Get 1,000 kills",
+        "tier": 4,
+        "precentageData": [
+            0,
+            1000
+        ]
+    },
+    "wait_its_all_sandbox": {
+        "title": "Wait, its all sandbox?",
+        "description": "Reach level 60 without using the N key",
+        "tier": 4
+    },
+    "l_bozo": {
+        "title": "L Bozo",
+        "description": "Die for your very first time",
+        "tier": 1,
+        "precentageData": [
+            1,
+            1
+        ]
+    },
+    "large_bozo_energy": {
+        "title": "Large Bozo Energy",
+        "description": "Die 10 times",
+        "tier": 1,
+        "precentageData": [
+            1,
+            10
+        ]
+    },
+    "okay_its_becoming_sad": {
+        "title": "Okay its becoming sad",
+        "description": "Die 50 times",
+        "tier": 2,
+        "precentageData": [
+            1,
+            50
+        ]
+    },
+    "it_became_sad": {
+        "title": "It became sad",
+        "description": "Die 100 times",
+        "tier": 3,
+        "precentageData": [
+            1,
+            100
+        ]
+    },
+    "polynotagon": {
+        "title": "Poly-not-agon",
+        "description": "Destroy a polygon",
+        "tier": 1,
+        "precentageData": [
+            3,
+            1
+        ]
+    },
+    "polygon_hater": {
+        "title": "Polygon hater",
+        "description": "Destroy 250 polygons",
+        "tier": 2,
+        "precentageData": [
+            3,
+            250
+        ]
+    },
+    "these_polygons_gotta_go": {
+        "title": "These polygons gotta go",
+        "description": "Destroy 1,000 polygons",
+        "tier": 3,
+        "precentageData": [
+            3,
+            1000
+        ]
+    },
+    "polygont": {
+        "title": "Polygon't",
+        "description": "Destroy 1,000,000 polygons",
+        "tier": 4,
+        "precentageData": [
+            3,
+            1000000
+        ]
+    },
+    "there_are_other_classes_too": {
+        "title": "There are other classes too",
+        "description": "Die as a basic 50 times",
+        "tier": 2,
+        "precentageData": [
+            9,
+            50
+        ]
+    },
+    "that_was_tough": {
+        "title": "That was tough",
+        "description": "Kill a boss",
+        "tier": 1,
+        "precentageData": [
+            2,
+            1
+        ]
+    },
+    "those_things_are_insane": {
+        "title": "Those things are insane",
+        "description": "Kill 4 bosses",
+        "tier": 1,
+        "precentageData": [
+            2,
+            4
+        ]
+    },
+    "what_in_the_world_is_a_celestial": {
+        "title": "What in the world is a celestial?",
+        "description": "Kill 15 bosses",
+        "tier": 2,
+        "precentageData": [
+            2,
+            15
+        ]
+    },
+    "boss_hunter": {
+        "title": "Boss hunter",
+        "description": "Kill 50 bosses",
+        "tier": 3,
+        "precentageData": [
+            2,
+            50
+        ]
+    },
+    "bosses_fear_me": {
+        "title": "Bosses fear me",
+        "description": "Kill 100 bosses",
+        "tier": 4,
+        "precentageData": [
+            2,
+            100
+        ]
+    },
+    "everybody_stars_somewhere": {
+        "title": "Everybody starts somewhere",
+        "description": "Reach 100,000 score in one session",
+        "tier": 1,
+        "precentageData": [
+            4,
+            100000
+        ]
+    },
+    "250k_away": {
+        "title": "250K away...",
+        "description": "Reach 750,000 score in one session",
+        "tier": 1,
+        "precentageData": [
+            4,
+            750000
+        ]
+    },
+    "one_million": {
+        "title": "One million",
+        "description": "Reach 1,000,000 score in one session",
+        "tier": 1,
+        "precentageData": [
+            4,
+            1000000
+        ]
+    },
+    "have_a_high_five": {
+        "title": "Have a High Five",
+        "description": "Reach 5,000,000 score in one session",
+        "tier": 1,
+        "precentageData": [
+            4,
+            5000000
+        ]
+    },
+    "10__9": {
+        "title": "10 > 9",
+        "description": "Reach 10,000,000 score in one session",
+        "tier": 1,
+        "precentageData": [
+            4,
+            10000000
+        ]
+    },
+    "millionaire": {
+        "title": "Millionaire",
+        "description": "Reach 1,000,000 total score",
+        "tier": 1,
+        "precentageData": [
+            6,
+            1000000
+        ]
+    },
+    "you_can_now_afford_a_lamborghini_veneno": {
+        "title": "You can now afford a Lamborghini Veneno",
+        "description": "Reach 10,000,000 total score",
+        "tier": 1,
+        "precentageData": [
+            6,
+            10000000
+        ]
+    },
+    "tax_collector": {
+        "title": "Tax Collector",
+        "description": "Reach 100,000,000 total score",
+        "tier": 1,
+        "precentageData": [
+            6,
+            100000000
+        ]
+    },
+    "billionaire": {
+        "title": "Billionaire",
+        "description": "Reach 1,000,000,000 total score",
+        "tier": 1,
+        "precentageData": [
+            6,
+            1000000000
+        ]
+    },
+    "hope_you_are_having_fun": {
+        "title": "Hope you are having fun",
+        "description": "Play one session for 30 minutes",
+        "tier": 1,
+        "precentageData": [
+            5,
+            1800,
+            true
+        ]
+    },
+    "i_mean_you_must_be_right": {
+        "title": "I mean, you must be right?",
+        "description": "Play one session for 1 hour",
+        "tier": 2,
+        "precentageData": [
+            5,
+            3600,
+            true
+        ]
+    },
+    "hopefully_you_have_the_score_to_back_this_up": {
+        "title": "Hopefully you have the score to back this up",
+        "description": "Play one session for 2 hours",
+        "tier": 3,
+        "precentageData": [
+            5,
+            7200,
+            true
+        ]
+    },
+    "no_way_you_didnt_go_afk": {
+        "title": "No way you didn't go AFK",
+        "description": "Play one session for 4 hours",
+        "tier": 4,
+        "precentageData": [
+            5,
+            14400,
+            true
+        ]
+    },
+    "hourly_enjoyer": {
+        "title": "Hourly enjoyer",
+        "description": "Have a total playtime of 1 hour",
+        "tier": 1,
+        "precentageData": [
+            7,
+            1800,
+            true
+        ]
+    },
+    "fhourly_enjoyer": {
+        "title": "fhourly enjoyer...?",
+        "description": "Have a total playtime of 4 hours",
+        "tier": 1,
+        "precentageData": [
+            7,
+            14400,
+            true
+        ]
+    },
+    "okay_that_was_fun": {
+        "title": "Okay, that was fun",
+        "description": "Have a total playtime of 10 hours",
+        "tier": 2,
+        "precentageData": [
+            7,
+            36000,
+            true
+        ]
+    },
+    "uh_are_you_okay": {
+        "title": "Uh are you okay?",
+        "description": "Have a total playtime of 24 hours",
+        "tier": 2,
+        "precentageData": [
+            7,
+            86400,
+            true
+        ]
+    },
+    "you_need_something_else_to_do": {
+        "title": "You need something else to do",
+        "description": "Have a total playtime of 72 hours",
+        "tier": 3,
+        "precentageData": [
+            7,
+            259200,
+            true
+        ]
+    },
+    "wake_up_wake_up_wake_up": {
+        "title": "WAKE UP WAKE UP WAKE UP",
+        "description": "Have a total playtime of 168 hours",
+        "tier": 4,
+        "precentageData": [
+            7,
+            604800,
+            true
+        ]
+    },
+    "laaaaaag": {
+        "title": "LAAAAAAG",
+        "description": "Reach 1000ms of latency",
+        "tier": 2
+    },
+    "drones_are_life": {
+        "title": "Drones are life",
+        "description": "Upgrade to director 100 times",
+        "tier": 3,
+        "precentageData": [
+            10,
+            100
+        ]
+    },
+    "indestructible": {
+        "title": "Indestructible",
+        "description": "Upgrade the max health stat to its maximum value",
+        "tier": 1
+    },
+    "dont_touch_me": {
+        "title": "Don't touch me",
+        "description": "Upgrade the body damage stat to its maximum value",
+        "tier": 1
+    },
+    "mach_4": {
+        "title": "Mach 4",
+        "description": "Upgrade the bullet speed stat to its maximum value",
+        "tier": 1
+    },
+    "indestructible_ii": {
+        "title": "Indestructible II",
+        "description": "Upgrade the bullet health stat to its maximum value",
+        "tier": 1
+    },
+    "theres_no_stopping_it": {
+        "title": "There's no stopping it!",
+        "description": "Upgrade the bullet penetration stat to its maximum value",
+        "tier": 1
+    },
+    "more_dangerous_than_it_looks": {
+        "title": "More dangerous than it looks",
+        "description": "Upgrade the bullet damage stat to its maximum value",
+        "tier": 1
+    },
+    "ratatatatatatatata": {
+        "title": "Ratatatatatatatata",
+        "description": "Upgrade the reload stat to its maximum value",
+        "tier": 1
+    },
+    "2fast4u": {
+        "title": "2fast4u",
+        "description": "Upgrade the movement stat to its maximum value",
+        "tier": 1
+    },
+    "selfrepairing": {
+        "title": "Self-repairing",
+        "description": "Upgrade the shield regeneration stat to its maximum value",
+        "tier": 1
+    },
+    "shielded_from_your_bs": {
+        "title": "Shielded from your BS",
+        "description": "Upgrade the shield capacity stat to its maximum value",
+        "tier": 1
+    },
+    "toxic": {
+        "title": "Toxic!",
+        "description": "*cough* *cough* Better stay away from these..",
+        "tier": 3
+    },
+    "hot": {
+        "title": "Hot!",
+        "description": "Ah! Ah! Spicy!..",
+        "tier": 3
+    },
+    "mystic": {
+        "title": "Mystic!",
+        "description": "Howd that get over there..",
+        "tier": 3
+    },
+    "realShiny": {
+        "title": "Shiny!",
+        "description": "Woah.. what is this thing?..",
+        "tier": 4
+    },
+    "miniship": {
+        "title": "Miniship",
+        "description": "Upgrade too the Mothership tank",
+        "tier": 1
+    },
+    "where_did_my_cannon_go": {
+        "title": "Where did my cannon go?",
+        "description": "Upgrade to a tank with no barrels",
+        "tier": 1
+    },
+    "fire_power": {
+        "title": "Fire power",
+        "description": "Upgrade to Twin",
+        "tier": 1
+    },
+    "snipin": {
+        "title": "Snipin'",
+        "description": "Upgrade to Sniper",
+        "tier": 1
+    },
+    "eat_those_bullets": {
+        "title": "Eat those bullets",
+        "description": "Upgrade to Machine Gun",
+        "tier": 1
+    },
+    "aint_no_one_sneaking_up_on_me": {
+        "title": "Ain't no one sneaking up on ME",
+        "description": "Upgrade to Flank Guard",
+        "tier": 1
+    },
+    "mmm_drones_drones_drones": {
+        "title": "Mmm drones drones drones",
+        "description": "Upgrade to Director",
+        "tier": 1
+    },
+    "one_shot_bby": {
+        "title": "One shot bby",
+        "description": "Upgrade to Pounder",
+        "tier": 1
+    },
+    "better_basic": {
+        "title": "Better basic",
+        "description": "Upgrade to Single",
+        "tier": 1
+    },
+    "bullet_hell": {
+        "title": "Bullet Hell!",
+        "description": "Upgrade to Pelleter",
+        "tier": 1
+    },
+    "build_a_wall": {
+        "title": "BUILD A WALL",
+        "description": "Upgrade to Trapper",
+        "tier": 1
+    },
+    "zoom": {
+        "title": "ZOOM",
+        "description": "Upgrade to Propeller",
+        "tier": 1
+    },
+    "cant_bother_using_both_hands_to_play": {
+        "title": "Can't bother using both hands to play",
+        "description": "Upgrade to Auto-2",
+        "tier": 1
+    },
+    "small_barrel_big_dreams": {
+        "title": "Small barrel, big dreams",
+        "description": "Upgrade to Minishot",
+        "tier": 1
+    },
+    "pointy": {
+        "title": "Pointy!",
+        "description": "Upgrade to Lancer",
+        "tier": 1
+    },
+    "automation": {
+        "title": "Automation",
+        "description": "Upgrade to Auto-Basic",
+        "tier": 1
+    },
+    "wannabe_hybrid": {
+        "title": "Wanna-be Hybrid",
+        "description": "Upgrade to Basebrid",
+        "tier": 1
+    },
+    "wannabe_hunter": {
+        "title": "Wanna-be Hunter",
+        "description": "Upgrade to Subduer",
+        "tier": 1
+    },
+    "they_get_big_i_swear": {
+        "title": "They get big, I swear!",
+        "description": "Upgrade to Mini Grower",
+        "tier": 1
+    },
+    "commencement_of_the_inception": {
+        "title": "Commencement of the inception",
+        "description": "Upgrade to Inceptioner",
+        "tier": 1
+    },
+    "which_one_is_me": {
+        "title": "Which one is me!",
+        "description": "Upgrade to Hivemind",
+        "tier": 1
+    },
+    "it_wasnt_worth_it": {
+        "title": "It wasn't worth it",
+        "description": "Upgrade to Switcheroo",
+        "tier": 1
+    },
+    "nuisance_exterminator": {
+        "title": "Nuisance exterminator",
+        "description": "Destroy 200 crashers",
+        "tier": 2,
+        "precentageData": [
+            8,
+            200
+        ]
+    },
+    "i_feel_special": {
+        "title": "I feel, special",
+        "description": "Have any colored name",
+        "tier": 2
+    },
+    "the_end_of_time": {
+        "title": "The end of time",
+        "description": "Witness the Arena Closers",
+        "tier": 3
+    },
+    "sneak_100": {
+        "title": "Sneak 100",
+        "description": "Go Invisible",
+        "tier": 2
+    },
+    "im_still_single": {
+        "title": "I'm Still Single!",
+        "description": "Use the Scope ability",
+        "tier": 1
+    },
+    "they_seek": {
+        "title": "They seek",
+        "description": "Kill a Crasher",
+        "tier": 1
+    },
+    "the_leader": {
+        "title": "The Leader",
+        "description": "Become the leader",
+        "tier": 2
+    },
+    "usurper": {
+        "title": "Usurper",
+        "description": "Kill the leader",
+        "tier": 2
+    },
+    "double_kill": {
+        "title": "Double Kill",
+        "description": "Kill 2 players within 5 seconds",
+        "tier": 2
+    },
+    "triple_kill": {
+        "title": "Triple Kill",
+        "description": "Kill 3 players within 5 seconds",
+        "tier": 3
+    },
+    "mean_lean_killing_machine": {
+        "title": "Mean Lean Killing Machine!",
+        "description": "Kill 5 players within 5 seconds",
+        "tier": 4
+    },
+    "teamwork": {
+        "title": "Teamwork",
+        "description": "Get an assist kill",
+        "tier": 2
+    },
+    "the_greatest_plan": {
+        "title": "The Greatest Plan",
+        "description": "Fly over any obstacle",
+        "tier": 2
+    },
+    "i_am_the_dominator": {
+        "title": "I AM THE DOMINATOR",
+        "description": "Become a Dominator in a domination match",
+        "tier": 2
+    },
+    "i_am_the_mothership": {
+        "title": "I AM THE MOTHERSHIP",
+        "description": "Become your team's Mothership",
+        "tier": 2
+    },
+    "okay_this_is_boring_i_give_up": {
+        "title": "Okay this is boring I give up",
+        "description": "Relinquish the control of either a Mothership or a Dominator",
+        "tier": 2
+    },
+    "victory_of_the_4th_war": {
+        "title": "Victory of the 4th War",
+        "description": "Beat the final wave of Boss Rush",
+        "tier": 4
+    },
+    "anonymous": {
+        "title": "Anonymous",
+        "description": "Enter a game with no name",
+        "tier": 1
+    },
+    "albino": {
+        "title": "What..?",
+        "description": "No way...",
+        "tier": 4
+    },
+    "the_king": {
+        "title": "The King of Woomy Arras.io",
+        "description": "Complete every single achievement, lol.",
+        "tier": 5
+    }
+}
