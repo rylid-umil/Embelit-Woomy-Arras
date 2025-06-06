@@ -1,0 +1,14 @@
+{
+    "MODE": "colldm",
+    "serverName": "College Dorm",
+    "WIDTH": 500,
+    "HEIGHT": 500,
+    "ROOM_SETUP": [
+        ["roid", "roid", "roid"],
+        ["roid", "nest", "roid"],
+        ["roid", "roid", "roid"]
+    ],
+    "X_GRID": 3,
+    "Y_GRID": 3,
+    "BOTS": 5
+}

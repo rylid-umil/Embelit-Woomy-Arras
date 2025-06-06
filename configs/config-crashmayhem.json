@@ -1,0 +1,18 @@
+{
+    "MODE": "ffa",
+    "serverName": "Crasher Mayhem",
+    "ROOM_SETUP": [
+        ["nest", "nest"],
+        ["nest", "nest"]
+    ],
+    "X_GRID": 2,
+    "Y_GRID": 2,
+    "WIDTH": 10000,
+    "HEIGHT": 10000,
+    "MAX_FOOD": 200,
+    "MAX_NEST_FOOD": 100,
+    "MAX_CRASHERS": 400,
+    "MAX_SANCS": 4,
+    "EVOLVE_HALT_CHANCE": 0.01,
+    "BOTS": 7
+}

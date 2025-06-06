@@ -1,0 +1,16 @@
+{
+    "MODE": "tdm",
+    "serverName": "2 Team Trenches",
+    "TEAM_AMOUNT": 2,
+    "ROOM_SETUP": [
+        ["n_b1", "roid", "nest", "roid", "n_b2"]
+    ],
+    "X_GRID": 5,
+    "Y_GRID": 1,
+    "WIDTH": 3750,
+    "HEIGHT": 750,
+    "MAX_FOOD": 100,
+    "MAX_NEST_FOOD": 10,
+    "MAX_CRASHERS": 12,
+    "BOTS": 20
+}

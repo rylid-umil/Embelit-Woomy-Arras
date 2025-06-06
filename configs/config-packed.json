@@ -1,0 +1,16 @@
+{
+    "MODE": "packed",
+    "serverName": "Packed Battle",
+    "WIDTH": 1800,
+    "HEIGHT": 1800,
+    "ROOM_SETUP": [
+        ["roid", "norm", "norm", "norm", "rock"],
+        ["norm", "norm", "norm", "norm", "norm"],
+        ["norm", "norm", "nest", "norm", "norm"],
+        ["norm", "norm", "norm", "norm", "norm"],
+        ["roid", "norm", "norm", "norm", "rock"]
+    ],
+    "X_GRID": 5,
+    "Y_GRID": 5,
+    "BOTS": 7
+}

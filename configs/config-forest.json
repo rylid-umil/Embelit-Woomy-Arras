@@ -1,0 +1,27 @@
+{
+    "MODE": "ffa",
+    "serverName": "Forest",
+    "ROOM_SETUP": [
+        ["roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid"],
+        ["roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest"],
+        ["roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid"],
+        ["roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest"],
+        ["roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid"],
+        ["roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest"],
+        ["roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid"],
+        ["roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest"],
+        ["roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid"],
+        ["roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest"],
+        ["roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid"],
+        ["roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest"],
+        ["roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid"],
+        ["roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest"],
+        ["roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid"],
+        ["roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest"],
+        ["roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid"],
+        ["roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest", "roid", "nest"]
+    ],
+    "X_GRID": 18,
+    "Y_GRID": 18,
+    "BOTS": 25
+}

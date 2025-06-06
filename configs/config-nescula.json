@@ -1,0 +1,45 @@
+/*
+{
+    "MODE": "ffa",
+    "serverName": "Free For All",
+    "MAZE": {
+        "ENABLED": true,
+        "cellSize": 150,
+        "stepOneSpacing": 3,
+        "fillChance": 0,
+        "sparedChance": 1,
+        "cavey": false,
+        "lineAmount": false,
+        "margin": 0,
+        "posMulti": 0.25
+    },
+    "ROOM_SETUP": [
+        ["roid", "norm", "norm", "norm", "rock", "norm", "norm", "norm", "rock", "rock", "norm", "norm", "norm", "rock", "norm", "norm", "norm", "roid"],
+        ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
+        ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
+        ["norm", "norm", "norm", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "norm", "norm", "norm"],
+        ["rock", "norm", "norm", "wall", "nest", "nest", "nest", "nest", "nest", "nest", "nest", "nest", "nest", "nest", "wall", "norm", "norm", "rock"],
+        ["norm", "norm", "norm", "wall", "nest", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "nest", "wall", "norm", "norm", "norm"],
+        ["norm", "norm", "norm", "wall", "nest", "wall", "domi", "nest", "nest", "nest", "nest", "nest", "wall", "nest", "wall", "norm", "norm", "norm"],
+        ["norm", "norm", "norm", "wall", "nest", "wall", "nest", "wall", "wall", "wall", "wall", "nest", "wall", "nest", "wall", "rock", "norm", "norm"],
+        ["rock", "norm", "norm", "wall", "nest", "nest", "nest", "wall", "boss", "boss", "nest", "nest", "wall", "nest", "norm", "norm", "norm", "rock"],
+        ["rock", "norm", "norm", "wall", "nest", "nest", "nest", "wall", "boss", "boss", "nest", "nest", "wall", "nest", "norm", "norm", "norm", "rock"],
+        ["norm", "norm", "norm", "wall", "nest", "wall", "nest", "wall", "wall", "wall", "wall", "nest", "wall", "nest", "wall", "rock", "norm", "norm"],
+        ["norm", "norm", "norm", "wall", "nest", "wall", "domi", "nest", "nest", "nest", "nest", "nest", "wall", "nest", "wall", "norm", "norm", "norm"],
+        ["norm", "norm", "norm", "wall", "nest", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "nest", "wall", "norm", "norm", "norm"],
+        ["rock", "norm", "norm", "wall", "nest", "nest", "nest", "nest", "nest", "nest", "nest", "nest", "nest", "nest", "wall", "norm", "norm", "rock"],
+        ["norm", "norm", "norm", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "wall", "norm", "norm", "norm"],
+        ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
+        ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
+        ["roid", "norm", "norm", "norm", "rock", "norm", "norm", "norm", "rock", "rock", "norm", "norm", "norm", "rock", "norm", "norm", "norm", "roid"]
+    ],
+    "X_GRID": 18,
+    "Y_GRID": 18,
+    "BOTS": 15,
+    "WIDTH": 10000,
+    "HEIGHT": 10000,
+    "MAX_NEST_FOOD": 600,
+    "MAX_CRASHERS": 100
+*/
+//fk you woomy arras
+

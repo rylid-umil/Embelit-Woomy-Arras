@@ -1,0 +1,20 @@
+{
+    "MODE": "tdm",
+    "serverName": "4 Team Trenches",
+    "TEAM_AMOUNT": 4,
+    "ROOM_SETUP": [
+        ["roid", "n_b3", "n_b3", "n_b3", "roid"],
+        ["n_b1", "rock", "roid", "rock", "n_b2"],
+        ["n_b1", "roid", "nest", "roid", "n_b2"],
+        ["n_b1", "rock", "roid", "rock", "n_b2"],
+        ["roid", "n_b4", "n_b4", "n_b4", "roid"]
+    ],
+    "X_GRID": 5,
+    "Y_GRID": 5,
+    "WIDTH": 3750,
+    "HEIGHT": 3750,
+    "MAX_FOOD": 100,
+    "MAX_NEST_FOOD": 10,
+    "MAX_CRASHERS": 12,
+    "BOTS": 20
+}
