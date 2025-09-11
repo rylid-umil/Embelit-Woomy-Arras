@@ -30,11 +30,18 @@ global.serverStats = {
 }
   
 // Utility functions
-function rnd(min, max){
+global.rnd = function (min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+function stopAllAudio() {
+    const audioElements = document.querySelectorAll('audio');
+    audioElements.forEach(audio => {
+        audio.pause();
+        audio.currentTime = 0; // Reset playback to the start
+    });
+};
   
 // Modify "Map" to improve it for our needs.
 Map.prototype.filter = function (callback) {
@@ -1788,8 +1795,16 @@ function getCrptFunction(){
                 }
             }
         }
-        if (c.serverName === "Squidward's Tiki Land") add(Class.playableAC);
-        else add(Class.basic);
+        switch (c.serverName) {
+            case "Squidward's Tiki Land":
+                add(Class.playableAC);
+                break;
+            case "Bounce":
+                add(Class.bouncer);
+                break;
+            default:
+                add(Class.basic);
+        };
         return output;
     })();
 
@@ -1814,10 +1829,15 @@ function getCrptFunction(){
                 [0, 0, 3, 8, 8, 8, 6, 8, 0, 0],
                 [1, 5, 1, 7, 7, 9, 2, 7, 0, 3],
                 [0, 0, 0, 6, 9, 9, 9, 9, 0, 0],
-            ]) : tank.IS_SMASHER ? ran.choose([
+            ]) : tank.IS_SMASHER && !tank.IS_BOUNCER ? ran.choose([
                 [12, 12, 11, 11, 11, 11, 0, 12, 0, 6],
                 [10, 12, 11, 11, 11, 11, 0, 10, 3, 7],
                 [9, 11, 11, 11, 11, 11, 4, 8, 1, 5],
+            ]) : tank.IS_BOUNCER ? ran.choose([
+                [12, 0, 0, 0, 3, 0, 12, 6, 0, 12],
+                [12, 0, 0, 0, 3, 0, 9, 8, 3, 6],
+                [12, 0, 0, 0, 6, 0, 6, 8, 3, 0],
+                [6, 0, 0, 0, 6, 0, 3, 8, 3, 4]
             ]) : ran.choose([ // Dupes act as a weight system lo
                 [0, 0, 4, 8, 8, 9, 8, 5, 0, 0],
                 [0, 0, 5, 9, 9, 9, 9, 1, 0, 0],
@@ -9028,10 +9048,10 @@ function getCrptFunction(){
                     return this.kill();
                 }
             }
-            if (c.DO_BASE_DAMAGE && room.gameMode === "tdm" && this.diesToTeamBase && !this.godmode && !this.passive && !this.isTurret) {
+            if (this.diesToTeamBase && !this.godmode && !this.passive && !this.isTurret) {
                 let bas = myCell.slice(0, -1);
-                if (bas === "bas" || bas === "n_b" || bas === "bad" || bas === "por") {
-                    if (bas + -this.team !== myCell) {
+                if (bas === "bas" || bas === "n_b" || bas === "bad" || bas === "por" || myCell === "void") {
+                    if ((bas + -this.team !== myCell && c.DO_BASE_DAMAGE && room.gameMode === "tdm") || myCell === "void") {
                         this.velocity.null();
                         this.accel.null();
                         this.kill();
@@ -9435,6 +9455,7 @@ function getCrptFunction(){
                     }
                     // Usurp message (Doesn't happen in ranked battle)
                     if (this.id === room.topPlayerID && !c.RANKED_BATTLE) {
+                        global.playDeathSound(true);
                         let usurptText = this.name || "The leader";
                         if (notJustFood) {
                             usurptText += " has been usurped by";
@@ -9464,6 +9485,8 @@ function getCrptFunction(){
                                 usurptText += " took the easy way out.";
                             } else if (this.isBot) {
                                 usurptText += " was slaughtered by server code.";
+                            } else if (c.serverName == "Bounce") {
+                                usurptText += " fell off this plane of existence.";
                             } else {
                                 usurptText += " suffered an unknown fate.";
                             }
@@ -11922,6 +11945,7 @@ function getCrptFunction(){
                 }
             }
             spawn(name) {
+                stopAllAudio();
                 let player = {
                     id: this.id
                 },
@@ -11994,6 +12018,9 @@ function getCrptFunction(){
                         break;
                     case "Tank Builder":
                         body.define(startingTank = Class.genericTank);
+                        break;
+                    case "Bounce":
+                        body.define(startingTank = Class.bouncer);
                         break;
                     default:
                         body.define(Class[c.STARTING_TANK] || Class[startingTank]);

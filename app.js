@@ -26,6 +26,105 @@ const _displayAds = function (toggle) {
     }
 }
 
+//lele
+//Audio LELELELELE
+let subspaceTripmine = new Audio("https://www.myinstants.com/media/sounds/subspace-tripmine.mp3"),
+    oofy = new Audio("https://www.myinstants.com/media/sounds/roblox-death-sound_1.mp3"),
+    mchit = new Audio("https://www.myinstants.com/media/sounds/minecraft_hit_soundmp3converter.mp3"),
+    vineboom = new Audio("https://www.myinstants.com/media/sounds/vine-boom.mp3"),
+    letmeknow = new Audio("https://www.myinstants.com/media/sounds/let-me-know.mp3"),
+    metalpipe = new Audio("https://www.myinstants.com/media/sounds/let-me-know.mp3"),
+    buzzer = new Audio("https://www.myinstants.com/media/sounds/wrong-answer-sound-effect.mp3"),
+    fortnitedeath = new Audio("https://www.myinstants.com/media/sounds/tmp_7901-951678082.mp3"),
+    prowler = new Audio("https://www.myinstants.com/media/sounds/prowler-sound-effect_6bXErot.mp3"),
+    bruh = new Audio("https://www.myinstants.com/media/sounds/movie_1.mp3"),
+    flashbangg = new Audio("https://www.myinstants.com/media/sounds/flashbanggg.mp3"),
+    sadviolin = new Audio("https://www.myinstants.com/media/sounds/tf_nemesis.mp3"),
+    babylaugh = new Audio("https://www.myinstants.com/media/sounds/baby-laughing-meme.mp3"),
+    windowserror = new Audio("https://www.myinstants.com/media/sounds/error_CDOxCYm.mp3"),
+    tacobell = new Audio("https://www.myinstants.com/media/sounds/taco-bell-bong-sfx.mp3"),
+    undertaker = new Audio("https://www.myinstants.com/media/sounds/undertakers-bell_2UwFCIe.mp3"),
+    fard = new Audio("https://www.myinstants.com/media/sounds/perfect-fart.mp3"),
+    anklebreaker = new Audio("https://www.myinstants.com/media/sounds/bone-crack.mp3e"),
+    punchy = new Audio("https://www.myinstants.com/media/sounds/punch-gaming-sound-effect-hd_RzlG1GE.mp3"),
+    catlaugh = new Audio("https://www.myinstants.com/media/sounds/cat-laugh-meme-1.mp3"),
+    fardrev = new Audio("https://www.myinstants.com/media/sounds/fart-with-reverb.mp3"),
+    minussocialcredit = new Audio("https://www.myinstants.com/media/sounds/999-social-credit-siren.mp3"),
+    outro = new Audio("https://www.myinstants.com/media/sounds/outro-song_oqu8zAg.mp3"),
+    fardlong = new Audio("https://www.myinstants.com/media/sounds/fart-meme-sound.mp3"),
+    goofyahh = new Audio("https://www.myinstants.com/media/sounds/goofy-ahh-sounds.mp3"),
+    wompwompwompwoomp= new Audio("https://www.myinstants.com/media/sounds/downer_noise.mp3"),
+    mafiosoaaa = new Audio("https://www.myinstants.com/media/sounds/mafioso-scream.mp3"),
+    gokudrip = new Audio("https://www.myinstants.com/media/sounds/drip-goku-meme-song-original-dragon-ball-super-music-clash-of-gods-in-description.mp3"),
+    lobotomye = new Audio("https://www.myinstants.com/media/sounds/lobotomy-sound-effect.mp3"),
+    bahaha = new Audio("https://www.myinstants.com/media/sounds/ny-video-online-audio-converter.mp3"),
+    questahdog = new Audio("https://www.myinstants.com/media/sounds/wait-wait-wait-what-the-hell-legend-sound.mp3"),
+    exploders = new Audio("https://www.myinstants.com/media/sounds/explosion-meme_dTCfAHs.mp3"),
+    rehehehe = new Audio("https://www.myinstants.com/media/sounds/rehehehe.mp3"),
+    pewpew = new Audio("https://www.myinstants.com/media/sounds/gunshotjbudden.mp3"),
+    cave1 = new Audio("https://www.myinstants.com/media/sounds/cave11_0QWMESM.mp3"),
+    wasted = new Audio("https://www.myinstants.com/media/sounds/gta-v-death-sound-effect-102.mp3"),
+    legobreaky = new Audio("https://www.myinstants.com/media/sounds/lego-breaking.mp3"),
+    roketlancher = new Audio("https://www.myinstants.com/media/sounds/roblox-explosion-sound.mp3"),
+    //moosic
+    gameOverMusic = new Audio("https://dl.dropboxusercontent.com/scl/fi/9p75wm50n80cb8f99907w/Embelit-Ost-Game-Over.mp3?rlkey=dh7h7vhdlovbd9e81j7exf90m&st=1snbc82q&dl=0");
+
+global.playDeathSound = function (yes) {
+    if (yes) {
+        // TS PMO NGA, LET ME STOP AUDIO U BCH
+        let soundTypes = 38
+        let sounds = [
+            subspaceTripmine,
+            oofy,
+            mchit,
+            vineboom,
+            letmeknow,
+            metalpipe,
+            buzzer,
+            fortnitedeath,
+            prowler,
+            bruh,
+            flashbangg,
+            sadviolin,
+            babylaugh,
+            windowserror,
+            tacobell,
+            undertaker,
+            fard,
+            anklebreaker,
+            punchy,
+            catlaugh,
+            fardrev,
+            minussocialcredit,
+            outro,
+            fardlong,
+            goofyahh,
+            wompwompwompwoomp,
+            mafiosoaaa,
+            gokudrip,
+            lobotomye,
+            bahaha,
+            questahdog,
+            exploders,
+            rehehehe,
+            pewpew,
+            cave1,
+            wasted,
+            legobreaky,
+            roketlancher
+        ];
+        sounds[global.rnd(0, soundTypes - 1)].play();
+
+    };
+};
+function stopAllAudio() { //BROKEN CUZ TS PMO NGA
+    const audioElements = document.querySelectorAll('audio');
+    audioElements.forEach(audio => {
+        audio.pause();
+        audio.currentTime = 0; // Reset playback to the start
+    });
+};
+
 // App.js
 function RememberScriptingIsBannable() {
     window.didMainLoad = true
@@ -2679,7 +2778,9 @@ function RememberScriptingIsBannable() {
             case 347:
                 return "#4605ad"; // ink color
             case 348: 
-                return mixColors(color.teal, color.blue, .3);;
+                return mixColors(color.teal, color.blue, .3);
+            case 349: 
+                return mixColors(color.red, color.magenta, .7);
             default:
                 return "#F00";
         }
@@ -2691,7 +2792,14 @@ function RememberScriptingIsBannable() {
         let dark = (_config.neon | _config.inverseBorderColor) ? color.white : color.black;
         return _config.darkBorders ? dark : mixColors(givenColor, dark, color.border);
     }
-
+    function getZoneRatio(cell) {
+        switch (cell) {
+            case "void":
+                return 0.4;
+            default:
+                return 0.3;
+        };
+    };
     function getZoneColor(cell, real, seed = 1) {
         if (cell.slice(0, -1) === "por") {
             switch (+cell.slice(3)) {
@@ -2757,6 +2865,8 @@ function RememberScriptingIsBannable() {
                 return mixColors(color.blue, color.guiwhite, 2 / 3);
             case "spn2":
                 return mixColors(color.red, color.guiwhite, 2 / 3);
+            case "void":
+                return "#000000";
             // KEEP NEST AT THE BOTTOM
             case "nest":
                 if (_config.tintedNest) return real ? color.purple : color.lavender;
@@ -3161,8 +3271,12 @@ function RememberScriptingIsBannable() {
                         return ["Body Damage", "Max Health", "Blob Speed", "Blob Health", "Blob Penetration", "Blob Damage", "Reload", "Movement Speed", "Shield Regeneration", "Shield Capacity"];
                     case 16: 
                         return ["Body Damage", "Max Health", "Butter Velocity", "Butter Hardness", "Butter Thickness", "Butter Damage", "Reload", "Movement Speed", "Shield Regeneration", "Shield Capacity"];
-                    case 16: 
+                    case 17: 
                         return ["Body Damage", "Max Health", "Shuriken Speed", "Shuriken Pierce", "Shuriken Penetration", "Shuriken Damage", "Reload", "Movement Speed", "Shield Regeneration", "Shield Capacity"];
+                    case 18: 
+                        return ["Bounciness", "Point Gain", "", "", "", "", "Acceleration", "Movement Speed", "Shield Regeneration", "Shield Capacity"];
+                    case 19: 
+                        return ["Bounciness", "Point Gain", "Drone Speed", "", "", "", "Acceleration and Reload", "Movement Speed", "Shield Regeneration", "Shield Capacity"];
                     default:
                         return ["Body Damage", "Max Health", "Bullet Speed", "Bullet Health", "Bullet Penetration", "Bullet Damage", "Reload", "Movement Speed", "Shield Regeneration", "Shield Capacity"];
                 }
@@ -4455,6 +4569,7 @@ function RememberScriptingIsBannable() {
                             _global._diedAt = Date.now()
                             _global._deathScreenState = 1
                             _global._died = false;
+                            stopAllAudio();
                         }
                         break;
                     case 221:
@@ -6129,6 +6244,7 @@ function RememberScriptingIsBannable() {
                                     break;
                             };
                         }
+                        playDeathSound(true);
                         _global.finalScore = Smoothbar(0);
                         _global.finalScore.set(m[0]);
                         _global.finalLifetime = Smoothbar(0);
@@ -8888,7 +9004,7 @@ function RememberScriptingIsBannable() {
                                 bottom = Math.min(_global._screenHeight, ratio * (i + 1) * _global._gameHeight / H - py + _global._screenHeight / 2);
                             k++;
                             if (cell === "edge") continue;
-                            ctx.fillStyle = mixColors(color.white, getZoneColor(cell, 1), 0.3, 0);
+                            ctx.fillStyle = mixColors(color.white, getZoneColor(cell, 1), getZoneRatio(cell), 0);
                             ctx.fillRect(left - 1, top - 1, right - left + 2, bottom - top + 2);
                         }
                         i++;
@@ -9829,7 +9945,7 @@ function RememberScriptingIsBannable() {
                     txt = "🔪 Killed by";
                     for (let i = 0; i < _global.finalKillers.length; i++) txt += " " + _util._addArticle(_mockups.get(_global.finalKillers[i]).name) + " and";
                     txt = txt.slice(0, -4) + ".";
-                } else txt += "🔪 Well that was kinda dumb, huh?";
+                } else txt += global.c.serverName.includes("Bounce") ? "🌌 Straight into the void!" : "🔪 Well that was kinda dumb, huh?";
                 return txt;
             };
         return function () {
