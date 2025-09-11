@@ -1,0 +1,25 @@
+{
+    "MODE": "ffa",
+    "serverName": "Bounce",
+    "PLAYER_SPAWN_TILES": ["tile"],
+    "ROOM_SETUP": [
+        ["void", "void", "void", "void", "void", "void", "void", "void", "void"],
+        ["void", "void", "void", "void", "void", "void", "void", "void", "void"],
+        ["void", "void", "roid", "norm", "norm", "norm", "roid", "void", "void"],
+        ["void", "void", "norm", "tile", "norm", "tile", "norm", "void", "void"],
+        ["void", "void", "norm", "norm", "nest", "norm", "norm", "void", "void"],
+        ["void", "void", "norm", "tile", "norm", "tile", "norm", "void", "void"],
+        ["void", "void", "roid", "norm", "norm", "norm", "roid", "void", "void"],
+        ["void", "void", "void", "void", "void", "void", "void", "void", "void"],
+        ["void", "void", "void", "void", "void", "void", "void", "void", "void"]
+    ],
+    "X_GRID": 9,
+    "Y_GRID": 9,
+    "WIDTH": 4500,
+    "HEIGHT": 4500,
+    "MAX_FOOD": 30,
+    "MAX_NEST_FOOD": 10,
+    "MAX_CRASHERS": 0,
+    "MAX_SANCS": 0,
+    "BOTS": 15
+}
