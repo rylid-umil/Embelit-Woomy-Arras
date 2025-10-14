@@ -2334,7 +2334,7 @@ function getCrptFunction(){
         }
         return function () {
             room.bossRushWave++;
-            let amount = Math.round(Math.random() * 8 + 4 /*20 + 20*/);
+            let amount = Math.round(Math.random() * 16 + 4 /*20 + 20*/);
             switch (room.bossRushWave) {
                 case 10:
                 case 20:
