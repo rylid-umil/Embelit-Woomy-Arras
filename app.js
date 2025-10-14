@@ -66,6 +66,14 @@ let subspaceTripmine = new Audio("https://www.myinstants.com/media/sounds/subspa
     wasted = new Audio("https://www.myinstants.com/media/sounds/gta-v-death-sound-effect-102.mp3"),
     legobreaky = new Audio("https://www.myinstants.com/media/sounds/lego-breaking.mp3"),
     roketlancher = new Audio("https://www.myinstants.com/media/sounds/roblox-explosion-sound.mp3"),
+    fahh = new Audio("https://www.myinstants.com/media/sounds/faaah.mp3"),
+    quandaledingle = new Audio("https://www.myinstants.com/media/sounds/lack-of-a-father-figure.mp3"),
+    socialcredit = new Audio("https://www.myinstants.com/media/sounds/999-social-credit-siren.mp3"),
+    ack = new Audio("https://www.myinstants.com/media/sounds/ack.mp3"),
+    hahafunny = new Audio("https://www.myinstants.com/media/sounds/ny-video-online-audio-converter.mp3"),
+    gunshot = new Audio("https://www.myinstants.com/media/sounds/gunshotjbudden.mp3"),
+    shutdown = new Audio("https://www.myinstants.com/media/sounds/microsoft-windows-xp-shutdown-sound.mp3"),
+    shaw = new Audio("https://www.myinstants.com/media/sounds/hollow-knight-hornet-voice-11.mp3")
     //moosic
     gameOverMusic = new Audio("https://dl.dropboxusercontent.com/scl/fi/9p75wm50n80cb8f99907w/Embelit-Ost-Game-Over.mp3?rlkey=dh7h7vhdlovbd9e81j7exf90m&st=1snbc82q&dl=0");
 
@@ -111,7 +119,15 @@ global.playDeathSound = function (yes) {
             cave1,
             wasted,
             legobreaky,
-            roketlancher
+            roketlancher,
+            fahh,
+            qualdaledingle,
+            socialcredit,
+            ack,
+            hahafunny,
+            gunshot,
+            shutdown,
+            shaw
         ];
         sounds[global.rnd(0, soundTypes - 1)].play();
 

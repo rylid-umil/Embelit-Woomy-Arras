@@ -9430,6 +9430,7 @@ function getCrptFunction(){
                     // If we generally broadcast something when we die, do so
                     if (this.settings.broadcastMessage) {
                         sockets.broadcast(this.settings.broadcastMessage);
+                        global.playDeathSound(true); //RAHHH
                     }
                     let toAdd = "";
                     for (let i = 0, l = killers.length; i < l; i++) {
