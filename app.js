@@ -73,7 +73,7 @@ let subspaceTripmine = new Audio("https://www.myinstants.com/media/sounds/subspa
     hahafunny = new Audio("https://www.myinstants.com/media/sounds/ny-video-online-audio-converter.mp3"),
     gunshot = new Audio("https://www.myinstants.com/media/sounds/gunshotjbudden.mp3"),
     shutdown = new Audio("https://www.myinstants.com/media/sounds/microsoft-windows-xp-shutdown-sound.mp3"),
-    shaw = new Audio("https://www.myinstants.com/media/sounds/hollow-knight-hornet-voice-11.mp3")
+    shaw = new Audio("https://www.myinstants.com/media/sounds/hollow-knight-hornet-voice-11.mp3"),
     //moosic
     gameOverMusic = new Audio("https://dl.dropboxusercontent.com/scl/fi/9p75wm50n80cb8f99907w/Embelit-Ost-Game-Over.mp3?rlkey=dh7h7vhdlovbd9e81j7exf90m&st=1snbc82q&dl=0");
 
