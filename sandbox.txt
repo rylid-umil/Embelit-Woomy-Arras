@@ -1,0 +1,35 @@
+defExports.ray = {
+    PARENT: [defExports.genericTank],
+    LABEL: 'Ray',
+    DANGER: 5,
+    GUNS: [{
+        POSITION: [5, 8.5, -1.6, 7, 0, 0, 0],
+        PROPERTIES: {
+            SKIN: 20
+        }
+    }]
+};
+for (let i = 0; i < 8; i++) {
+    defExports.pictrap.GUNS = defExports.ray.GUNS.concat({
+        POSITION: [1, 8, 1, 0, 0, 0, 0 + (i*0.02)],
+        PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.ray]),
+            TYPE: [defExports.bullet],
+        }
+    });
+}
+defExports.solo = {
+    PARENT: [defExports.genericTank],
+    LABEL: 'Solo',
+    DANGER: 6,
+    TOOLTIP: 'Though it may seem weak, never underestimate a tank with a singular lone barrel.',
+    GUNS: [{
+        POSITION: [18, 8, 1, 0, 0, 0, 0],
+        PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.solo]),
+            TYPE: defExports.bullet
+        }
+    }, {
+        POSITION: [5, 8.5, -1.6, 7, 0, 0, 0]
+    }]
+};

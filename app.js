@@ -8127,6 +8127,13 @@ function RememberScriptingIsBannable() {
                     context.lineTo(x + l[0] * Math.cos(angle - r[0]), y + l[0] * Math.sin(angle - r[0]));
                     context.lineTo(x + l[1] * Math.cos(angle) * 1.25, y + l[1] * Math.sin(angle) * 1.25);
                     break;
+                case 20: // Laser stream barrel
+                    context.lineTo(x + l[0] * Math.cos(angle + r[0]), y + l[0] * Math.sin(angle + r[0]));
+                    context.lineTo(x + l[1] * Math.cos(angle + Math.PI - r[1]) * 1.1, y + l[1] * Math.sin(angle + Math.PI - r[1]));
+                    context.lineTo(x + l[1] * Math.cos(angle + Math.PI + r[1]) * 1.1, y + l[1] * Math.sin(angle + Math.PI + r[1]));
+                    context.lineTo(x + l[0] * Math.cos(angle - r[0]), y + l[0] * Math.sin(angle - r[0]));
+                    context.lineTo(x + l[1] * Math.cos(angle) * 1.25, y + l[1] * Math.sin(angle) * 0.5);
+                    break;
                 case 100: // Tachyon
                     rotatePoint(-0.2 - movement, 0, angle - Math.PI / 2, drawSize);
                     rotatePoint(-0.2 - movement, 2.5, angle - Math.PI / 2, drawSize);
