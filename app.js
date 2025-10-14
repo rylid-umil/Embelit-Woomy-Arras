@@ -121,7 +121,7 @@ global.playDeathSound = function (yes) {
             legobreaky,
             roketlancher,
             fahh,
-            qualdaledingle,
+            quandaledingle,
             socialcredit,
             ack,
             hahafunny,
