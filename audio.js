@@ -100,9 +100,9 @@ function playMusic(music) {
     if (music[2] != "music") {
         console.warn(music[0] + " is not classified as a music track. This will cause it to not stop when music is supposed to be stopped.")
     }
-    music.currentTime = 0;
-    music.play();
-    musicListener = addEventListener("ended", (event) => {
+    music.src.currentTime = 0;
+    music.src.play();
+    music.src.addEventListener("ended", (event) => {
         musicPlaying = false;
         musicDelay = musicStatus == "spawn" || musicStatus == "dead" ? 0 : global.rnd(global.c.MUSIC_DELAY[0], global.c.MUSIC_DELAY[1]);
     });
