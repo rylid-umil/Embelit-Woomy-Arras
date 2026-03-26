@@ -36,7 +36,7 @@ global.rnd = function (min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 global.isEmptyArray = function (value) {
-    return value.isArray && value.length() == 0;;
+    return value.isArray && value.length == 0;;
 };
   
 // Modify "Map" to improve it for our needs.

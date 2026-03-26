@@ -81,7 +81,7 @@ global.playDeathSound = function () {
                 deathSounds.concat(element)
             }
         })
-        let s = deathSounds[global.rnd(0, deathSounds.length()-1)];
+        let s = deathSounds[global.rnd(0, deathSounds.length-1)];
         if (s.src.paused) {s.src.currentTime = 0} else {s.src.play()}; // If sound is already playing, restart it.
     };
 };
