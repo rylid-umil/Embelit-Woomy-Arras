@@ -70,10 +70,10 @@ let sounds = [
     ["shutdown", "//www.myinstants.com/media/sounds/microsoft-windows-xp-shutdown-sound.mp3", "sound"],
     ["shaw", "//www.myinstants.com/media/sounds/hollow-knight-hornet-voice-11.mp3", "sound"],
     // Music
-    ["gameOver", "./resources/music/gameOver.mp3"],
-    ["crasherMayhem", "./resources/music/crasherMayhem.mp3"],
-    ["title", "./resources/music/title.mp3"],
-    ["aerius", "./resources/music/aerius.mp3"]
+    ["gameOver", "./resources/music/gameOver.mp3", "music"],
+    ["crasherMayhem", "./resources/music/crasherMayhem.mp3", "music"],
+    ["title", "./resources/music/title.mp3", "music"],
+    ["aerius", "./resources/music/aerius.mp3", "music"]
 ]
 sounds.forEach(function (element) {
     global.newSound(element[0], element[1], element[2])
@@ -98,6 +98,7 @@ global.stopAllAudio = function (stype) {
         // Check if a type is specified. if so, only stop the sound if its type matches the selected type. If it is null (unselected), stop all sounds.
         if (stype === null ? true : element[1].type == stype) {
             element[1].src.currentTime = element[1].src.duration; // end the audio - this causes the ended Event to be activated instead of the paused one.
+            element[1].src.paused = true;
         }
     });
 };
@@ -106,7 +107,7 @@ global.musicDelay = 0,
 global.musicStatus = "normal";
 function playMusic(music) {
     if (music.type != "music") {
-        console.warn(music[0] + " is not classified as a music track. This will cause it to not stop when music is supposed to be stopped.")
+        console.warn(music.name + " is not classified as a music track. This will cause it to not stop when music is supposed to be stopped.")
     }
     music.src.currentTime = 0;
     music.src.play();
