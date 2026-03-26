@@ -12,6 +12,14 @@ global.newSound = function (name, content, type) {
     if (type = "sound") global.sfx[name] = { ...temp};
     if (type = "music") global.music[name] = { ...temp};
 };
+global.rnd = function (min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+global.isEmptyArray = function (value) {
+    return value.isArray && value.length == 0;;
+};
 console.log("i am the one that exists");
 let sounds = [
     //Sound Effects
