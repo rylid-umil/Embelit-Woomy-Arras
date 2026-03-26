@@ -171,3 +171,4 @@ async function waitForUserInput() {
     setInterval(musicLoop, 1);
     musicLoop();
 }
+waitForUserInput();
