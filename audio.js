@@ -12,7 +12,8 @@ global.newSound = function (name, content, type) {
     if (type = "sound") global.sfx[name] = { ...temp};
     if (type = "music") global.music[name] = { ...temp};
 };
-var sounds = [
+console.log("i am the one that exists");
+let sounds = [
     //Sound Effects
     ["subspaceTripmine", "//www.myinstants.com/media/sounds/subspace-tripmine.mp3", "sound"],
     ["oofy", "//www.myinstants.com/media/sounds/roblox-death-sound_1.mp3", "sound"],
