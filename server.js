@@ -10320,7 +10320,6 @@ function getCrptFunction(){
                 //this.runEvalPacket();
                 this.animationsInterval = setInterval(this.animationsUpdate.bind(this), 1000 / 5);// 5 fps animations
                 clients.push(this);
-                global.spawnMusicRestart();
             }
             animationsUpdate() {
                 if (this.animationsToDo.size === 0) {
@@ -12075,6 +12074,7 @@ function getCrptFunction(){
                 this.camera.fov = 1000;
                 this.status.hasSpawned = true;
                 body.rewardManager(-1, "welcome_to_the_game");
+                global.spawnMusicRestart()
                 if (c.SANDBOX) {
                     [
                         "Press \"p\" to change to basic again",
