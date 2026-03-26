@@ -1,5 +1,6 @@
 //lele
 //Audio LELELELELE
+const audioContext = new (window.AudioContext)();
 global.sounds = {}; //all ze sounds go here!!!
 global.sfx = {}; //only sfx
 global.music = {}; //only music
@@ -162,8 +163,11 @@ function musicLoop() {
         };
     };
 }
-setInterval(musicLoop, 1);
-musicLoop();
-document.body.addEventListener("click", (event) => {
-    stopAllAudio(global.music)
-}, {once: true});
+//Wait until user clicks to play the musics
+async function waitForUserInput() {
+    if (audioContext.state == "suspended") {
+        const wait = await audioContext.resume();
+    }
+    setInterval(musicLoop, 1);
+    musicLoop();
+}
