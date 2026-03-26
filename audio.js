@@ -74,7 +74,7 @@ global.getSetting = function (setting) {
     document.getElementById("Woomy" + setting).value;
 }
 global.playDeathSound = function () {
-    if (getSetting(funnyDeath)) {
+    if (getSetting("funnyDeath")) {
         let deathSounds = []
         Object.keys(sounds).forEach(function (element) {
             if (element.type = "sound") {
