@@ -115,19 +115,21 @@ function playMusic(music) {
     musicPlaying = true;
     music.src.addEventListener("ended", (event) => {
         musicPlaying = false;
-        musicDelay = musicStatus == "spawn" || musicStatus == "dead" ? 0 : global.rnd(global.c.MUSIC_DELAY[0], global.c.MUSIC_DELAY[1]);
-        if (musicStatus == "spawn") musicStatus = "normal"
+        if (musicStatus == "spawn" || musicStatus == "dead") {
+            if (musicStatus == "spawn") musicStatus = "normal";
+            delay = 0;
+        } else musicDelay = global.rnd(global.c.MUSIC_DELAY[0], global.c.MUSIC_DELAY[1]);
     });
 
 }
 global.spawnMusicRestart = function () {
     musicStatus = "spawn";
-    stopAllAudio(); // also stop sfx cuz they are annoying (especially wait wait wait wait wut da haeeaeaeaeaeaeaeaeaexck)
+    setTimeout(function () {stopAllAudio()}, 5); // also stop sfx cuz they are annoying (especially wait wait wait wait wut da haeeaeaeaeaeaeaeaeaexck)
 }
 global.gameOverMusic = function () {
     musicStatus = "dead";
-    stopAllAudio("music")
-}
+    setTimeout(function () {stopAllAudio("music")}, 5)
+};
 function musicLoop() {
     if (musicPlaying == false) {
         if (musicDelay > 0) {
