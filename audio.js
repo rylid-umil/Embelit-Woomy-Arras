@@ -86,7 +86,7 @@ global.playDeathSound = function () {
         let deathSounds = []
         Object.keys(global.sfx).forEach(function (element) {
             if (element.type = "sound") {
-                deathSounds.concat(element)
+                deathSounds.push(element)
             }
         })
         let s = deathSounds[global.rnd(0, deathSounds.length-1)];
