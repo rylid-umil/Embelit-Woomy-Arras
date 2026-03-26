@@ -76,7 +76,7 @@ global.getSetting = function (setting) {
 global.playDeathSound = function () {
     if (getSetting("funnyDeath") == "on") {
         let deathSounds = []
-        Object.keys(sounds).forEach(function (element) {
+        Object.keys(global.sfx).forEach(function (element) {
             if (element.type = "sound") {
                 deathSounds.concat(element)
             }
