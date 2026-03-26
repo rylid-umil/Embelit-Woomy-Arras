@@ -62,9 +62,9 @@ let sounds = [
     ["shutdown", "//www.myinstants.com/media/sounds/microsoft-windows-xp-shutdown-sound.mp3", "sound"],
     ["shaw", "//www.myinstants.com/media/sounds/hollow-knight-hornet-voice-11.mp3", "sound"],
     // Music
-    ["gameOver", "./resources/music/gameOver.mp3"]
-    ["crasherMayhem", "./resources/music/crasherMayhem.mp3"]
-    ["title", "./resources/music/title.mp3"]
+    ["gameOver", "./resources/music/gameOver.mp3"],
+    ["crasherMayhem", "./resources/music/crasherMayhem.mp3"],
+    ["title", "./resources/music/title.mp3"],
     ["aerius", "./resources/music/aerius.mp3"]
 ]
 sounds.forEach(function (element) {
