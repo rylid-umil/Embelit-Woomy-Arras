@@ -90,7 +90,7 @@ global.playDeathSound = function () {
             }
         })
         let s = deathSounds[global.rnd(0, deathSounds.length-1)];
-        if (s.src.paused) {s.src.currentTime = 0} else {s.src.play()}; // If sound is already playing, restart it.
+        if (!s.src.paused) {s.src.currentTime = 0} else {s.src.play()}; // If sound is already playing, restart it.
     };
 };
 global.stopAllAudio = function (stype) {
@@ -101,9 +101,9 @@ global.stopAllAudio = function (stype) {
         }
     });
 };
-let musicPlaying = false,
-    musicDelay = 0,
-    musicStatus = "normal";
+global.musicPlaying = false,
+global.musicDelay = 0,
+global.musicStatus = "normal";
 function playMusic(music) {
     if (music.type != "music") {
         console.warn(music[0] + " is not classified as a music track. This will cause it to not stop when music is supposed to be stopped.")
@@ -146,7 +146,9 @@ function musicLoop() {
             } else {
                 musicToPlay = music.title;
             }
+            playMusic(musicToPlay)
         };
     };
 }
 setInterval(musicLoop, 1);
+musicLoop();
