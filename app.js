@@ -1,5 +1,6 @@
 "use strict";
 
+global.gameStarted = false;
 // Ad stuff
 let adStatus = true;
 const _displayAds = function (toggle) {
@@ -25,121 +26,6 @@ const _displayAds = function (toggle) {
         console.error(e)
     }
 }
-
-//lele
-//Audio LELELELELE
-let subspaceTripmine = new Audio("https://www.myinstants.com/media/sounds/subspace-tripmine.mp3"),
-    oofy = new Audio("https://www.myinstants.com/media/sounds/roblox-death-sound_1.mp3"),
-    mchit = new Audio("https://www.myinstants.com/media/sounds/minecraft_hit_soundmp3converter.mp3"),
-    vineboom = new Audio("https://www.myinstants.com/media/sounds/vine-boom.mp3"),
-    letmeknow = new Audio("https://www.myinstants.com/media/sounds/let-me-know.mp3"),
-    metalpipe = new Audio("https://www.myinstants.com/media/sounds/let-me-know.mp3"),
-    buzzer = new Audio("https://www.myinstants.com/media/sounds/wrong-answer-sound-effect.mp3"),
-    fortnitedeath = new Audio("https://www.myinstants.com/media/sounds/tmp_7901-951678082.mp3"),
-    prowler = new Audio("https://www.myinstants.com/media/sounds/prowler-sound-effect_6bXErot.mp3"),
-    bruh = new Audio("https://www.myinstants.com/media/sounds/movie_1.mp3"),
-    flashbangg = new Audio("https://www.myinstants.com/media/sounds/flashbanggg.mp3"),
-    sadviolin = new Audio("https://www.myinstants.com/media/sounds/tf_nemesis.mp3"),
-    babylaugh = new Audio("https://www.myinstants.com/media/sounds/baby-laughing-meme.mp3"),
-    windowserror = new Audio("https://www.myinstants.com/media/sounds/error_CDOxCYm.mp3"),
-    tacobell = new Audio("https://www.myinstants.com/media/sounds/taco-bell-bong-sfx.mp3"),
-    undertaker = new Audio("https://www.myinstants.com/media/sounds/undertakers-bell_2UwFCIe.mp3"),
-    fard = new Audio("https://www.myinstants.com/media/sounds/perfect-fart.mp3"),
-    anklebreaker = new Audio("https://www.myinstants.com/media/sounds/bone-crack.mp3e"),
-    punchy = new Audio("https://www.myinstants.com/media/sounds/punch-gaming-sound-effect-hd_RzlG1GE.mp3"),
-    catlaugh = new Audio("https://www.myinstants.com/media/sounds/cat-laugh-meme-1.mp3"),
-    fardrev = new Audio("https://www.myinstants.com/media/sounds/fart-with-reverb.mp3"),
-    minussocialcredit = new Audio("https://www.myinstants.com/media/sounds/999-social-credit-siren.mp3"),
-    outro = new Audio("https://www.myinstants.com/media/sounds/outro-song_oqu8zAg.mp3"),
-    fardlong = new Audio("https://www.myinstants.com/media/sounds/fart-meme-sound.mp3"),
-    goofyahh = new Audio("https://www.myinstants.com/media/sounds/goofy-ahh-sounds.mp3"),
-    wompwompwompwoomp= new Audio("https://www.myinstants.com/media/sounds/downer_noise.mp3"),
-    mafiosoaaa = new Audio("https://www.myinstants.com/media/sounds/mafioso-scream.mp3"),
-    gokudrip = new Audio("https://www.myinstants.com/media/sounds/drip-goku-meme-song-original-dragon-ball-super-music-clash-of-gods-in-description.mp3"),
-    lobotomye = new Audio("https://www.myinstants.com/media/sounds/lobotomy-sound-effect.mp3"),
-    bahaha = new Audio("https://www.myinstants.com/media/sounds/ny-video-online-audio-converter.mp3"),
-    questahdog = new Audio("https://www.myinstants.com/media/sounds/wait-wait-wait-what-the-hell-legend-sound.mp3"),
-    exploders = new Audio("https://www.myinstants.com/media/sounds/explosion-meme_dTCfAHs.mp3"),
-    rehehehe = new Audio("https://www.myinstants.com/media/sounds/rehehehe.mp3"),
-    pewpew = new Audio("https://www.myinstants.com/media/sounds/gunshotjbudden.mp3"),
-    cave1 = new Audio("https://www.myinstants.com/media/sounds/cave11_0QWMESM.mp3"),
-    wasted = new Audio("https://www.myinstants.com/media/sounds/gta-v-death-sound-effect-102.mp3"),
-    legobreaky = new Audio("https://www.myinstants.com/media/sounds/lego-breaking.mp3"),
-    roketlancher = new Audio("https://www.myinstants.com/media/sounds/roblox-explosion-sound.mp3"),
-    fahh = new Audio("https://www.myinstants.com/media/sounds/faaah.mp3"),
-    quandaledingle = new Audio("https://www.myinstants.com/media/sounds/lack-of-a-father-figure.mp3"),
-    socialcredit = new Audio("https://www.myinstants.com/media/sounds/999-social-credit-siren.mp3"),
-    ack = new Audio("https://www.myinstants.com/media/sounds/ack.mp3"),
-    hahafunny = new Audio("https://www.myinstants.com/media/sounds/ny-video-online-audio-converter.mp3"),
-    gunshot = new Audio("https://www.myinstants.com/media/sounds/gunshotjbudden.mp3"),
-    shutdown = new Audio("https://www.myinstants.com/media/sounds/microsoft-windows-xp-shutdown-sound.mp3"),
-    shaw = new Audio("https://www.myinstants.com/media/sounds/hollow-knight-hornet-voice-11.mp3"),
-    //moosic
-    gameOverMusic = new Audio("https://dl.dropboxusercontent.com/scl/fi/9p75wm50n80cb8f99907w/Embelit-Ost-Game-Over.mp3?rlkey=dh7h7vhdlovbd9e81j7exf90m&st=1snbc82q&dl=0");
-
-global.playDeathSound = function (yes) {
-    if (yes) {
-        // TS PMO NGA, LET ME STOP AUDIO U BCH
-        let soundTypes = 38
-        let sounds = [
-            subspaceTripmine,
-            oofy,
-            mchit,
-            vineboom,
-            letmeknow,
-            metalpipe,
-            buzzer,
-            fortnitedeath,
-            prowler,
-            bruh,
-            flashbangg,
-            sadviolin,
-            babylaugh,
-            windowserror,
-            tacobell,
-            undertaker,
-            fard,
-            anklebreaker,
-            punchy,
-            catlaugh,
-            fardrev,
-            minussocialcredit,
-            outro,
-            fardlong,
-            goofyahh,
-            wompwompwompwoomp,
-            mafiosoaaa,
-            gokudrip,
-            lobotomye,
-            bahaha,
-            questahdog,
-            exploders,
-            rehehehe,
-            pewpew,
-            cave1,
-            wasted,
-            legobreaky,
-            roketlancher,
-            fahh,
-            quandaledingle,
-            socialcredit,
-            ack,
-            hahafunny,
-            gunshot,
-            shutdown,
-            shaw
-        ];
-        sounds[global.rnd(0, soundTypes - 1)].play();
-
-    };
-};
-function stopAllAudio() { //BROKEN CUZ TS PMO NGA
-    const audioElements = document.querySelectorAll('audio');
-    audioElements.forEach(audio => {
-        audio.pause();
-        audio.currentTime = 0; // Reset playback to the start
-    });
-};
 
 // App.js
 function RememberScriptingIsBannable() {
@@ -174,29 +60,29 @@ function RememberScriptingIsBannable() {
         const cache = {};
         let i = 0;
         for (let image of [ // MUST BE PNG
-            ["./resources/IED.png", "ied"],
-            ["./resources/danksGun.png", "danksGun"],
-            ["./resources/hotwheels.png", "hotWheels"],
-            ["./resources/ned.png", "ned"],
-            ["./resources/omega.png", "omega"],
-            ["./resources/do_not_open_at_any_cost.jpg", "do_not_open_at_any_cost"],
-            ["./resources/speedy.bmp", "speedy"],
-            ["./resources/missingno.bmp", "missingno"],
-            ["./resources/ice_hue.png", "ice_hue"],
-            ["./resources/poison_hue.png", "poison_hue"],
-            ["./resources/emp_hue.png", "emp_hue"],
-            ["./resources/par_hue.png", "par_hue"],
-            ["./resources/YGlitch250.png", "fourFour"],
-            ["./resources/MarbleDecoration.png", "marble_swirl"],
+            ["./resources/images/IED.png", "ied"],
+            ["./resources/images/danksGun.png", "danksGun"],
+            ["./resources/images/hotwheels.png", "hotWheels"],
+            ["./resources/images/ned.png", "ned"],
+            ["./resources/images/omega.png", "omega"],
+            ["./resources/images/do_not_open_at_any_cost.jpg", "do_not_open_at_any_cost"],
+            ["./resources/images/speedy.bmp", "speedy"],
+            ["./resources/images/missingno.bmp", "missingno"],
+            ["./resources/images/ice_hue.png", "ice_hue"],
+            ["./resources/images/poison_hue.png", "poison_hue"],
+            ["./resources/images/emp_hue.png", "emp_hue"],
+            ["./resources/images/par_hue.png", "par_hue"],
+            ["./resources/images/YGlitch250.png", "fourFour"],
+            ["./resources/images/MarbleDecoration.png", "marble_swirl"],
             ["//media.discordapp.net/attachments/995124277521166356/998978430068605058/magma.png", "fillygroove_badge"],
-            ["./resources/soccerballs.png", "soccerballs"],
-            ["./resources/ooooo_youre_a_boy_kisser.png", "boyKisser"],
-            ["./resources/tonk.png", "tonk"],
-            ["./resources/rollfac.png", "rollfac"],
-            ["./resources/fordf150.png", "f150", 2],
-            ["./resources/fordf150Flipped.png", "f150Flipped", 2],
-            ["./resources/treadmarks.png", "treadmarks"],
-            ["./resources/seniorpentagon.png", "seniorpentagon"]
+            ["./resources/images/soccerballs.png", "soccerballs"],
+            ["./resources/images/ooooo_youre_a_boy_kisser.png", "boyKisser"],
+            ["./resources/images/tonk.png", "tonk"],
+            ["./resources/images/rollfac.png", "rollfac"],
+            ["./resources/images/fordf150.png", "f150", 2],
+            ["./resources/images/fordf150Flipped.png", "f150Flipped", 2],
+            ["./resources/images/treadmarks.png", "treadmarks"],
+            ["./resources/images/seniorpentagon.png", "seniorpentagon"]
         ]) {
             setTimeout(() => {
                 if (image[2]) {
@@ -436,7 +322,11 @@ function RememberScriptingIsBannable() {
             "you just got BULLET'D!!! BULLET someone else to get unBULLET'D",
             "L + ratio cope",
             "To die or to not die?",
-            "'To thy he/she/it/they/xe/ze/re/💀e has/have/h💀se deadeth' - Shakespeare"
+            "'To thy he/she/it/they/xe/ze/re/💀e has/have/h💀se deadeth' - Shakespeare",
+            "You are DED.",
+            "Goodnight",
+            "And so it begins once more.",
+            "You're never getting out of this loop are you?"
         ],
         _deathSplashOverride: 0,
         _deathSplashChoice: 0,
@@ -1178,6 +1068,8 @@ function RememberScriptingIsBannable() {
         prediction: 2,
         fontFamily: "Ubuntu",
         localmotion: false,
+        funnyDeath: false,
+        music: true
     },
         color = {
             "teal": "#7ADBBC",
@@ -3599,6 +3491,8 @@ function RememberScriptingIsBannable() {
             new Setting("lerpSize", "Lerp Entity Sizes", "boolean", false);
             new Setting("localmotion", "Local Motion", "boolean", false);
             new Setting("gameAnimations", "Game Menu Animations", "boolean", true);
+            new Setting("funnyDeaths", "Just... don't.", "boolean", false);
+            new Setting("music", "Music", "boolean", true);
             new Setting("mainMenuStyle", "Menu Dark Mode", "boolean", false, enabled => {
                 const setProperties = vars => {
                     if (enabled) {
@@ -6260,7 +6154,8 @@ function RememberScriptingIsBannable() {
                                     break;
                             };
                         }
-                        playDeathSound(true);
+                        global.playDeathSound(true);
+                        global.gameOverMusic();
                         _global.finalScore = Smoothbar(0);
                         _global.finalScore.set(m[0]);
                         _global.finalLifetime = Smoothbar(0);
@@ -6443,6 +6338,7 @@ function RememberScriptingIsBannable() {
         if (consent) consent.remove()
         _displayAds(false)
         if (!_global.animLoopHandle) _animloop();
+        global.gameStarted = true;
         _socket = await (await socketInit)()
         //clearInterval(_global.screenScale);
         //_global.functionSociety.push([`${_socket}`, canvas, "socket"]);

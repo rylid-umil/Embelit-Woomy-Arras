@@ -1,6 +1,8 @@
 {
     "MODE": "ffa",
     "serverName": "Crasher Mayhem",
+    "MUSIC_MODE": "crasher",
+    "MUSIC_DELAY": [0, 0],
     "ROOM_SETUP": [
         ["nest", "nest"],
         ["nest", "nest"]

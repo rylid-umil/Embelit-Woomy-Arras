@@ -34,13 +34,9 @@ global.rnd = function (min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-function stopAllAudio() {
-    const audioElements = document.querySelectorAll('audio');
-    audioElements.forEach(audio => {
-        audio.pause();
-        audio.currentTime = 0; // Reset playback to the start
-    });
+};
+global.isEmptyArray = function (value) {
+    return value.isArray && value.length() == 0;;
 };
   
 // Modify "Map" to improve it for our needs.
@@ -433,6 +429,8 @@ api.apiEvent.on("tokenData", (data) => {
         "connectionLimit": 999,
         "MODE": "ffa",
         "serverName": "Free For All",
+        "MUSIC_MODE": "default",
+        "MUSIC_DELAY": [30000, 60000], // MIN/MAX TIME BETWEEN MUSIC, TIME IS IN 1000 PER SECOND
         "TEAM_AMOUNT": 2,
         "RANDOM_COLORS": false,
         "BOSS_SPAWN_TIMER": 760,
@@ -5515,7 +5513,7 @@ function getCrptFunction(){
                 if (set.TEAM != null && set.TEAM !== -1) this.team = set.TEAM;
                 if (set.BOSS_TIER_TYPE != null) this.bossTierType = set.BOSS_TIER_TYPE;
                 if (set.SYNC_TURRET_SKILLS != null) this.syncTurretSkills = set.SYNC_TURRET_SKILLS;
-                if (set.INVISIBLE != null && set.INVISIBLE !== []) {
+                if (set.INVISIBLE != null && set.INVISIBLE.isEmptyArray) {
                     if (set.INVISIBLE.length !== 3) throw ("Invalid invisibility values!");
                     this.invisible = set.INVISIBLE;
                 } else this.invisible = [0, 0, 0];
@@ -8155,7 +8153,7 @@ function getCrptFunction(){
                     this.SIZE = set.SIZE * this.squiggle;
                     if (this.coreSize == null) this.coreSize = this.SIZE;
                 }
-                if (set.SKILL != null && set.SKILL !== []) {
+                if (set.SKILL != null && set.SKILL.isEmptyArray) {
                     if (set.SKILL.length !== 10) throw ("Invalid skill raws!");
                     this.skill.set(set.SKILL);
                 }
@@ -8167,7 +8165,7 @@ function getCrptFunction(){
                     }
                     this.refreshBodyAttributes();
                 }
-                if (set.SKILL_CAP != null && set.SKILL_CAP !== []) {
+                if (set.SKILL_CAP != null && set.SKILL_CAP.isEmptyArray) {
                     if (set.SKILL_CAP.length !== 10) throw ("Invalid skill caps!");
                     this.skill.setCaps(set.SKILL_CAP);
                 }
@@ -11946,7 +11944,7 @@ function getCrptFunction(){
                 }
             }
             spawn(name) {
-                stopAllAudio();
+                global.spawnMusicRestart()
                 let player = {
                     id: this.id
                 },

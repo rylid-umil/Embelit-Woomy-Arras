@@ -3,6 +3,7 @@
     "serverName": "Incubator",
     "TEAM_AMOUNT": 1,
     "MODE": "tdm",
+    "MUSIC_DELAY": [0, 0],
     "WIDTH": 1750,
     "HEIGHT": 1750,
     "X_GRID": 2,
