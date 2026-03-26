@@ -97,7 +97,7 @@ global.playDeathSound = function () {
 global.stopAllAudio = function (stype) {
     Object.entries(global.sounds).forEach(function (element) {
         // Check if a type is specified. if so, only stop the sound if its type matches the selected type. If it is null (unselected), stop all sounds.
-        if (stype === null ? true : element[1].type == stype) {
+        if (element[1].type == stype ?? element[1].type) {
             element[1].src.currentTime = element[1].src.duration; // end the audio - this causes the ended Event to be activated instead of the paused one.
             element[1].src.paused = true;
         }
@@ -118,13 +118,13 @@ function playMusic(music) {
         if (musicStatus == "spawn" || musicStatus == "dead") {
             if (musicStatus == "spawn") musicStatus = "normal";
             delay = 0;
-        } else musicDelay = global.rnd(global.c.MUSIC_DELAY[0], global.c.MUSIC_DELAY[1]);
+        } else musicDelay = global.rnd(global.c.MUSIC_DELAY[0] ?? 0, global.c.MUSIC_DELAY[1] ?? 0);
     });
 
 }
 global.spawnMusicRestart = function () {
     musicStatus = "spawn";
-    setTimeout(function () {stopAllAudio()}, 5); // also stop sfx cuz they are annoying (especially wait wait wait wait wut da haeeaeaeaeaeaeaeaeaexck)
+    setTimeout(function () {stopAllAudio("music")}, 5); // also stop sfx cuz they are annoying (especially wait wait wait wait wut da haeeaeaeaeaeaeaeaeaexck)
 }
 global.gameOverMusic = function () {
     musicStatus = "dead";
