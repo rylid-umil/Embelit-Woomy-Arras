@@ -2,6 +2,8 @@
     "MODE": "ffa",
     "serverName": "Bounce",
     "PLAYER_SPAWN_TILES": ["tile"],
+    "MUSIC_MODE": "bounce",
+    "MUSIC_DELAY": [0, 0],
     "ROOM_SETUP": [
         ["void", "void", "void", "void", "void", "void", "void", "void", "void"],
         ["void", "void", "void", "void", "void", "void", "void", "void", "void"],

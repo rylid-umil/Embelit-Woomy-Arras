@@ -73,7 +73,8 @@ let sounds = [
     ["gameOver", "./resources/music/gameOver.mp3", "music"],
     ["crasherMayhem", "./resources/music/crasherMayhem.mp3", "music"],
     ["title", "./resources/music/title.mp3", "music"],
-    ["aerius", "./resources/music/aerius.mp3", "music"]
+    ["aerius", "./resources/music/aerius.mp3", "music"],
+    ["boing", "./resources/music/boing.mp3", "music"]
 ]
 sounds.forEach(function (element) {
     global.newSound(element[0], element[1], element[2])
@@ -138,12 +139,15 @@ function musicLoop() {
                     case "dead":
                         musicToPlay = music.gameOver;
                     default:
-                        switch(global.c.MUSIC_MODE) {
+                        switch(global.c.MUSIC_MODE ?? "default") {
                             case "default":
                                 musicToPlay = music.aerius;
                                 break;
                             case "crasher":
                                 musicToPlay = music.crasherMayhem
+                                break
+                            case "bounce":
+                                musicToPlay = music.bounce
                         }
                 }
             } else {

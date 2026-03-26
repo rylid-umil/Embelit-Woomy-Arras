@@ -420,7 +420,7 @@ api.apiEvent.on("tokenData", (data) => {
         "MODE": "ffa",
         "serverName": "Free For All",
         "MUSIC_MODE": "default",
-        "MUSIC_DELAY": [30000, 60000], // MIN/MAX TIME BETWEEN MUSIC, TIME IS IN 1000 PER SECOND
+        "MUSIC_DELAY": [1000, 5000], // MIN/MAX TIME BETWEEN MUSIC, TIME IS IN 1000 PER SECOND
         "TEAM_AMOUNT": 2,
         "RANDOM_COLORS": false,
         "BOSS_SPAWN_TIMER": 760,
