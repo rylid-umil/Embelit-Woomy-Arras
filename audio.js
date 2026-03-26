@@ -86,9 +86,9 @@ global.playDeathSound = function () {
     };
 };
 global.stopAllAudio = function (stype) {
-    Object.keys(sounds).forEach(function (element) {
+    Object.keys(global.sounds).forEach(function (element) {
         // Check if a type is specified. if so, only stop the sound if its type matches the selected type. If it is null (unselected), stop all sounds.
-        if (stype === null ? true : element[2] == stype) {
+        if (stype === null ? true : element.type == stype) {
             element.src.currentTime = element.src.duration; // end the audio - this causes the ended Event to be activated instead of the paused one.
         }
     });
@@ -97,7 +97,7 @@ let musicPlaying = false,
     musicDelay = 0,
     musicStatus = "normal";
 function playMusic(music) {
-    if (music[2] != "music") {
+    if (music.type != "music") {
         console.warn(music[0] + " is not classified as a music track. This will cause it to not stop when music is supposed to be stopped.")
     }
     music.src.currentTime = 0;
