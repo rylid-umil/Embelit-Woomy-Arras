@@ -3500,14 +3500,14 @@ function RememberScriptingIsBannable() {
                         vars.setProperty('--backgroundBorderColor', '#f2e558');
                         vars.setProperty('--menuTextColor', '#e1e1e7');
                         vars.setProperty('--backgroundBrightness', '0.85');
-                        vars.setProperty('--backgroundLink', "url(/resources/background_dark.svg)");
+                        vars.setProperty('--backgroundLink', "url(/resources/images/background_dark.svg)");
                         _rewardManager._unlockAchievement("its_better_for_my_eyes");
                     } else {
                         vars.setProperty('--backgroundColor', '#dde6eb');
                         vars.setProperty('--backgroundBorderColor', '#c1cfd8');
                         vars.setProperty('--menuTextColor', '#000000');
                         vars.setProperty('--backgroundBrightness', '0.9');
-                        vars.setProperty('--backgroundLink', "url(/resources/background_light.svg)");
+                        vars.setProperty('--backgroundLink', "url(/resources/images/background_light.svg)");
                     }
                 }
                 setProperties(document.querySelector(":root").style);
