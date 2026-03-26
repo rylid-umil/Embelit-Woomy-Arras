@@ -146,8 +146,8 @@ function musicLoop() {
                             case "crasher":
                                 musicToPlay = music.crasherMayhem
                                 break
-                            case "boing":
-                                musicToPlay = music.bounce
+                            case "bounce":
+                                musicToPlay = music.boing
                         }
                 }
             } else {
