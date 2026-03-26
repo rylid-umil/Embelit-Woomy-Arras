@@ -85,7 +85,7 @@ global.playDeathSound = function () {
     if (getSetting("funnyDeath") == "on") {
         let deathSounds = []
         Object.entries(global.sfx).forEach(function (element) {
-            if (element.type = "sound") {
+            if (element[1].type = "sound") {
                 deathSounds.push(element[1])
             }
         })
