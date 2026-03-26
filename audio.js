@@ -97,8 +97,12 @@ global.playDeathSound = function () {
 global.stopAllAudio = function (source) {
     Object.entries(source).forEach(function (element) {
         // source = global.sounds for all sounds, global.sfx for sfx, global.music for music
+        try {
         element[1].src.currentTime = element[1].src.duration; // end the audio - this causes the ended Event to be activated instead of the paused one.
         element[1].src.paused = true;
+        } catch (e) {
+            console.log("stupid " + element[1].name + " decided to kill itself on me >:(")
+        };
     });
 };
 global.musicPlaying = false,
