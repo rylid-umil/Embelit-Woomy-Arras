@@ -159,5 +159,7 @@ function musicLoop() {
         };
     };
 }
-setInterval(musicLoop, 1);
-musicLoop();
+document.addEventListener("click", (event) => {
+    setInterval(musicLoop, 1);
+    musicLoop();
+}, {once: true});
