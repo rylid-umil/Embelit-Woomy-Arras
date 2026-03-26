@@ -71,7 +71,7 @@ sounds.forEach(function (element) {
     global.newSound(element[0], element[1], element[2])
 })
 global.getSetting = function (setting) {
-    document.getElementById(`Woomy_${setting}`).value;
+    return document.getElementById(`Woomy_${setting}`).value;
 }
 global.playDeathSound = function () {
     if (getSetting("funnyDeath") == "on") {
