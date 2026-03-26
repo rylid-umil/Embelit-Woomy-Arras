@@ -9,8 +9,8 @@ global.newSound = function (name, content, type) {
     temp.type = type;
     temp.name = name;
     global.sounds[name] = { ...temp};
-    if (type = "sound") global.sfx[name] = { ...temp};
-    if (type = "music") global.music[name] = { ...temp};
+    if (type == "sound") {global.sfx[name] = { ...temp};}
+    if (type == "music") {global.music[name] = { ...temp};}
 };
 global.rnd = function (min, max) {
     min = Math.ceil(min);
@@ -140,6 +140,7 @@ function musicLoop() {
                 switch(musicStatus) {
                     case "dead":
                         musicToPlay = music.gameOver;
+                        break;
                     default:
                         switch(global.c.MUSIC_MODE ?? "default") {
                             case "default":
@@ -159,7 +160,7 @@ function musicLoop() {
         };
     };
 }
-document.addEventListener("click", (event) => {
-    setInterval(musicLoop, 1);
-    musicLoop();
+setInterval(musicLoop, 1);
+musicLoop();
+document.bodyaddEventListener("click", (event) => {
 }, {once: true});
