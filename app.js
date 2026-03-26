@@ -3491,7 +3491,7 @@ function RememberScriptingIsBannable() {
             new Setting("lerpSize", "Lerp Entity Sizes", "boolean", false);
             new Setting("localmotion", "Local Motion", "boolean", false);
             new Setting("gameAnimations", "Game Menu Animations", "boolean", true);
-            new Setting("funnyDeaths", "Just... don't.", "boolean", false);
+            new Setting("funnyDeath", "Just... don't.", "boolean", false);
             new Setting("music", "Music", "boolean", true);
             new Setting("mainMenuStyle", "Menu Dark Mode", "boolean", false, enabled => {
                 const setProperties = vars => {
