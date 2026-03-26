@@ -164,6 +164,6 @@ function musicLoop() {
 }
 setInterval(musicLoop, 1);
 musicLoop();
-document.bodyaddEventListener("click", (event) => {
+document.body.addEventListener("click", (event) => {
     stopAllAudio(global.music)
 }, {once: true});
