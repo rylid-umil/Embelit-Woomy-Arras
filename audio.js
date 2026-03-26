@@ -110,9 +110,11 @@ function playMusic(music) {
     }
     music.src.currentTime = 0;
     music.src.play();
+    musicPlaying = true;
     music.src.addEventListener("ended", (event) => {
         musicPlaying = false;
         musicDelay = musicStatus == "spawn" || musicStatus == "dead" ? 0 : global.rnd(global.c.MUSIC_DELAY[0], global.c.MUSIC_DELAY[1]);
+        if (musicStatus == "spawn") musicStatus = "normal"
     });
 
 }
