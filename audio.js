@@ -86,18 +86,18 @@ global.playDeathSound = function () {
         let deathSounds = []
         Object.entries(global.sfx).forEach(function (element) {
             if (element.type = "sound") {
-                deathSounds.push(element)
+                deathSounds.push(element[1])
             }
         })
-        let s = deathSounds[global.rnd(0, deathSounds.length-1)][2];
-        if (s.paused) {s.currentTime = 0} else {s.play()}; // If sound is already playing, restart it.
+        let s = deathSounds[global.rnd(0, deathSounds.length-1)][1];
+        if (s.src.paused) {s.src.currentTime = 0} else {s.src.play()}; // If sound is already playing, restart it.
     };
 };
 global.stopAllAudio = function (stype) {
     Object.entries(global.sounds).forEach(function (element) {
         // Check if a type is specified. if so, only stop the sound if its type matches the selected type. If it is null (unselected), stop all sounds.
-        if (stype === null ? true : element[2] == stype) {
-            element[2].currentTime = element[2].duration; // end the audio - this causes the ended Event to be activated instead of the paused one.
+        if (stype === null ? true : element[1].type == stype) {
+            element[1].src.currentTime = element[1].src.duration; // end the audio - this causes the ended Event to be activated instead of the paused one.
         }
     });
 };
