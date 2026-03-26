@@ -146,7 +146,7 @@ function musicLoop() {
                             case "crasher":
                                 musicToPlay = music.crasherMayhem
                                 break
-                            case "bounce":
+                            case "boing":
                                 musicToPlay = music.bounce
                         }
                 }
