@@ -94,13 +94,11 @@ global.playDeathSound = function () {
         if (!s.src.paused) {s.src.currentTime = 0} else {s.src.play()}; // If sound is already playing, restart it.
     };
 };
-global.stopAllAudio = function (stype) {
-    Object.entries(global.sounds).forEach(function (element) {
-        // Check if a type is specified. if so, only stop the sound if its type matches the selected type. If it is null (unselected), stop all sounds.
-        if (element[1].type == stype ?? element[1].type) {
-            element[1].src.currentTime = element[1].src.duration; // end the audio - this causes the ended Event to be activated instead of the paused one.
-            element[1].src.paused = true;
-        }
+global.stopAllAudio = function (source) {
+    Object.entries(source).forEach(function (element) {
+        // source = global.sounds for all sounds, global.sfx for sfx, global.music for music
+        element[1].src.currentTime = element[1].src.duration; // end the audio - this causes the ended Event to be activated instead of the paused one.
+        element[1].src.paused = true;
     });
 };
 global.musicPlaying = false,
@@ -124,11 +122,11 @@ function playMusic(music) {
 }
 global.spawnMusicRestart = function () {
     musicStatus = "spawn";
-    setTimeout(function () {stopAllAudio("music")}, 5); // also stop sfx cuz they are annoying (especially wait wait wait wait wut da haeeaeaeaeaeaeaeaeaexck)
+    setTimeout(function () {stopAllAudio(global.sounds)}, 5); // also stop sfx cuz they are annoying (especially wait wait wait wait wut da haeeaeaeaeaeaeaeaeaexck)
 }
 global.gameOverMusic = function () {
     musicStatus = "dead";
-    setTimeout(function () {stopAllAudio("music")}, 5)
+    setTimeout(function () {stopAllAudio(global.music)}, 5)
 };
 function musicLoop() {
     if (musicPlaying == false) {
@@ -163,4 +161,5 @@ function musicLoop() {
 setInterval(musicLoop, 1);
 musicLoop();
 document.bodyaddEventListener("click", (event) => {
+    stopAllAudio(global.music)
 }, {once: true});
