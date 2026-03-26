@@ -40,7 +40,7 @@ let sounds = [
     ["tacobell", "//www.myinstants.com/media/sounds/taco-bell-bong-sfx.mp3", "sound"],
     ["undertaker", "//www.myinstants.com/media/sounds/undertakers-bell_2UwFCIe.mp3", "sound"],
     ["fard", "//www.myinstants.com/media/sounds/perfect-fart.mp3", "sound"],
-    ["anklebreaker", "//www.myinstants.com/media/sounds/bone-crack.mp3e", "sound"],
+    ["anklebreaker", "//www.myinstants.com/media/sounds/bone-crack.mp3", "sound"],
     ["punchy", "//www.myinstants.com/media/sounds/punch-gaming-sound-effect-hd_RzlG1GE.mp3", "sound"],
     ["catlaugh", "//www.myinstants.com/media/sounds/cat-laugh-meme-1.mp3", "sound"],
     ["fardrev", "//www.myinstants.com/media/sounds/fart-with-reverb.mp3", "sound"],
