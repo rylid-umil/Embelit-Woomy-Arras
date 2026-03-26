@@ -163,12 +163,5 @@ function musicLoop() {
         };
     };
 }
-//Wait until user clicks to play the musics
-async function waitForUserInput() {
-    if (audioContext.state == "suspended") {
-        const wait = await audioContext.resume();
-    }
-    setInterval(musicLoop, 1);
-    musicLoop();
-}
-waitForUserInput();
+setInterval(musicLoop, 1);
+musicLoop();
