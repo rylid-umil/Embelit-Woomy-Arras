@@ -81,7 +81,7 @@ sounds.forEach(function (element) {
     global.newSound(element[0], element[1], element[2])
 })
 global.getSetting = function (setting) {
-    return global.config[setting];
+    return global.settingsConfig[setting];
 }
 global.playDeathSound = function () {
     if (getSetting("funnyDeath")) {
