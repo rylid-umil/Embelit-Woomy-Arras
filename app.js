@@ -9945,6 +9945,7 @@ function RememberScriptingIsBannable() {
             drawText(getKills(), (x - 170), (y + 77) * getGlide(), 16, color.guiwhite);
             drawText(getDeath(), (x - 170), (y + 99) * getGlide(), 16, color.guiwhite);
             drawText("⌚ Died on " + _global.deathDate, (x - 170), (y + 121) * getGlide(), 16, color.guiwhite);
+            drawText("🍝 This run is ravioli approved 👍", (x - 170), (y + 142) * getGlide(), 16, color.guiwhite);
             drawText(delay > 0 ? "You may respawn in " + delay + " second" + (delay === 1 ? "" : "s") + "." : "Press enter to respawn!", x, (y + 147) * getGlide(), 16, color.guiwhite, "center");
             _global._forceTwiggle = false;
         };
