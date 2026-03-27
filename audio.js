@@ -165,7 +165,7 @@ function musicLoop() {
     };
 }
 function musicVolumeLoop() {
-    global.music.entries().forEach(element => {
+    Object.entries(global.music).forEach(element => {
         element.src.volume = getSetting(music) == "yes"
     })
 }
