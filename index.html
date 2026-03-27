@@ -112,7 +112,7 @@
         Made with love by Drako Hyena (Original) and Conner (Mod)
       </h5>
       <div id="playDiv" style="display: flex;justify-content: center">
-        <button id="confbutton" style="margin-right: 0px;margin-left: 0px;width: 200px;visibility: visible;">Start</button>
+        <button id="confbutton" style="margin-right: 0px;margin-left: 0px;width: 200px;visibility: hidden;">Start</button>
       </div>
     </div>
     <script>
@@ -151,6 +151,7 @@
                 '<a href="google.com">Google.com</a>'
             ][global.rnd(0,11)]
             clearInterval(loadingMenuInterval)
+            confbutton.style.visibility = "visible";
             confbutton.addEventListener("click", () => {
                 loadingMenu.remove()
                 global.confirmed = true;

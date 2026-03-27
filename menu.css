@@ -473,11 +473,11 @@ notice {
     color: white;
     text-align: center;
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.2);
-    background: #a6d469;
+    background: #6997d4;
     border: 0;
-    border-bottom: 2px solid #749f34;
+    border-bottom: 2px solid #345f9f;
     cursor: pointer;
-    box-shadow: inset 0 -2px #749f34;
+    box-shadow: inset 0 -2px #34449f;
     border-radius: 5px;
     font: 18px Ubuntu;
 }
