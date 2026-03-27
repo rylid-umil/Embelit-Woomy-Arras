@@ -165,8 +165,8 @@ function musicLoop() {
     };
 }
 function musicVolumeLoop() {
-    Object.entries(global.music).forEach(element => {
-        element.src.volume = getSetting("music") == "yes"
+    Object.entries(global.music).forEach((element) => {
+        element[1].src.volume = getSetting("music") == "on"
     })
 }
 setInterval(musicLoop, 1);
