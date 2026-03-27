@@ -81,10 +81,10 @@ sounds.forEach(function (element) {
     global.newSound(element[0], element[1], element[2])
 })
 global.getSetting = function (setting) {
-    return document.getElementById(`Woomy_${setting}`).value;
+    return global.config[setting];
 }
 global.playDeathSound = function () {
-    if (getSetting("funnyDeath") == "on") {
+    if (getSetting("funnyDeath")) {
         let deathSounds = []
         Object.entries(global.sfx).forEach(function (element) {
             if (element[1].type = "sound") {
@@ -166,7 +166,7 @@ function musicLoop() {
 }
 function musicVolumeLoop() {
     Object.entries(global.music).forEach((element) => {
-        element[1].src.volume = getSetting("music") == "on"
+        element[1].src.volume = getSetting("music")
     })
 }
 setInterval(musicLoop, 1);

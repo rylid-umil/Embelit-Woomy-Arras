@@ -1679,6 +1679,7 @@ function RememberScriptingIsBannable() {
                 "border": 0.7
             }
         };
+    global.settingsConfig = _config;
     _global.config = _config;
     const _backgroundAnimations = (function () {
         const realCanvas = document.getElementById("gameCanvas");
