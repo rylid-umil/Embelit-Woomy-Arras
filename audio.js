@@ -164,5 +164,12 @@ function musicLoop() {
         };
     };
 }
+function musicVolumeLoop() {
+    global.music.entries().forEach(element => {
+        element.src.volume = getSetting(music) == "yes"
+    })
+}
 setInterval(musicLoop, 1);
 musicLoop();
+setInterval(musicVolumeLoop, 1);
+musicVolumeLoop();
