@@ -1,3 +1,4 @@
+global.confirmed = false
 window.startServer = async function(configSuffix){
 /*jslint node: true */
 /*jshint -W061 */

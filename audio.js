@@ -134,6 +134,7 @@ global.gameOverMusic = function () {
     setTimeout(function () {stopAllAudio(global.music)}, 5)
 };
 function musicLoop() {
+    if (!global.confirmed) return;
     if (musicPlaying == false) {
         if (musicDelay > 0) {
             musicDelay--

@@ -111,10 +111,14 @@
       <h5 style="color:white;font-size:xx-small;">
         Made with love by Drako Hyena (Original) and Conner (Mod)
       </h5>
+      <div id="playDiv">
+        <button id="confbutton" style="margin-right: 0px;margin-left: 0px;width: 200px;visibility: visible;">Start</button>
+      </div>
     </div>
     <script>
       let loadingMenu = document.getElementById("loadingScreen")
       let loadingText = document.getElementById("loadingText")
+      let confbutton = document.getElementById("confbutton")
       let dotCounter = 0
       let loadingMenuInterval = setInterval(()=>{
         dotCounter++
@@ -129,8 +133,28 @@
           str += text[i]
         }
         loadingText.innerHTML = str
+
         if(window.defsLoaded){
-          clearInterval(loadingMenuInterval)
+            loadingText.innerHTML = [
+                "Loading finished!",
+                "Ready to go!",
+                "Ready!",
+                "The loading is done.",
+                "Maybe click that button, eh?",
+                "You should click that.",
+                "Time to rock and roll!",
+                "Let's get tankin'!",
+                "This message is not very rare.",
+                "Click to begin.",
+                "Message 11",
+                "What do you get when you combine S and tart?",
+                '<a href="google.com">Google.com</a>'
+            ][global.rnd(0,11)]
+            confbutton.addEventListener("click", () => {
+                loadingMenu.remove()
+                clearInterval(loadingMenuInterval)
+                global.confirmed = true;
+            })
         }
       }, 100)
     </script>
