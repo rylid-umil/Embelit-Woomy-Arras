@@ -19,7 +19,7 @@ global.rnd = function (min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 global.isEmptyArray = function (value) {
-    return value.isArray() && value.length == 0;
+    return Array.isArray(value) && value.length == 0;
 };
 console.log("i am the one that exists");
 let sounds = [
