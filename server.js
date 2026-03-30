@@ -9350,10 +9350,11 @@ function getCrptFunction(){
                         killTools = [],
                         notJustFood = false,
                         name = this.master.name === "" ? this.master.type === "tank" ? "An unnamed player's " + this.label : this.master.type === "miniboss" ? "a visiting " + this.label : util.addArticle(this.label) : this.master.name + "'s " + this.label,
+                        killerList = this.lastBouncer && c.serverName.includes("Bounce") ? [this.lastBouncer] : this.collisionArray,
                         jackpot = Math.round(util.getJackpot(this.skill.score) / this.collisionArray.length);
-                    // Find out who killed us, and if it was "notJustFood" or not
-                    for (let i = 0, l = this.collisionArray.length; i < l; i++) {
-                        let o = this.collisionArray[i];
+                    // Find out who killed us, and if it was "notJustFood" or not]
+                    for (let i = 0, l = killerList.length; i < l; i++) {
+                        let o = killerList[i];
                         if (o.type === "wall" || o.type === "mazeWall") {
                             continue;
                         }
@@ -9375,7 +9376,6 @@ function getCrptFunction(){
                         }
                         killTools.push(o);
                     }
-                    if (c.serverName.includes("Bounce") && this.lastBouncer) killers = [this.lastBouncer];
                     // Now process that information
                     let killText = notJustFood ? "" : "You have been killed by ",
                         giveKillMessage = this.settings.givesKillMessage;
