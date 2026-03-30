@@ -1796,7 +1796,7 @@ function getCrptFunction(){
         };
         return output;
     })();
-
+    global.botTankSee = [...botTanks]
     const spawnBot = (loc = null) => {
         let position = loc,
             max = 100;
