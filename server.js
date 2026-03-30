@@ -1779,7 +1779,7 @@ function getCrptFunction(){
             }
             for (let key in my) {
                 if (key.startsWith("UPGRADES_TIER")) {
-                    my[key].forEach(add);
+                    my[key].forEach((element) => {add(element)});
                     flag = 1;
                 }
             }
