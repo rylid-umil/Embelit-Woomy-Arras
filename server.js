@@ -5504,7 +5504,7 @@ function getCrptFunction(){
                 if (set.TEAM != null && set.TEAM !== -1) this.team = set.TEAM;
                 if (set.BOSS_TIER_TYPE != null) this.bossTierType = set.BOSS_TIER_TYPE;
                 if (set.SYNC_TURRET_SKILLS != null) this.syncTurretSkills = set.SYNC_TURRET_SKILLS;
-                if (set.INVISIBLE != null && set.INVISIBLE.isEmptyArray) {
+                if (set.INVISIBLE != null && global.isEmptyArray(set.INVISIBLE)) {
                     if (set.INVISIBLE.length !== 3) throw ("Invalid invisibility values!");
                     this.invisible = set.INVISIBLE;
                 } else this.invisible = [0, 0, 0];
@@ -8144,7 +8144,7 @@ function getCrptFunction(){
                     this.SIZE = set.SIZE * this.squiggle;
                     if (this.coreSize == null) this.coreSize = this.SIZE;
                 }
-                if (set.SKILL != null && set.SKILL.isEmptyArray) {
+                if (set.SKILL != null && global.isEmptyArray(set.SKILL)) {
                     if (set.SKILL.length !== 10) throw ("Invalid skill raws!");
                     this.skill.set(set.SKILL);
                 }
