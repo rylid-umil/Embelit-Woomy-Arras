@@ -9373,6 +9373,7 @@ function getCrptFunction(){
                             }
                         } else if (o.settings.acceptsScore) {
                             o.skill.score += jackpot;
+                            console.log(o);
                         }
                         killTools.push(o);
                     }
