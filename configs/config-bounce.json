@@ -4,6 +4,7 @@
     "PLAYER_SPAWN_TILES": ["tile"],
     "MUSIC_MODE": "bounce",
     "MUSIC_DELAY": [0, 0],
+    "DEFAULT_CLASS": "bouncer",
     "ROOM_SETUP": [
         ["void", "void", "void", "void", "void", "void", "void", "void", "void"],
         ["void", "void", "void", "void", "void", "void", "void", "void", "void"],

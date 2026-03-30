@@ -1,6 +1,7 @@
 {
     "MODE": "tdm",
     "serverName": "Squidward's Tiki Land",
+    "DEFAULT_CLASS": "playableAC",
     "TEAM_AMOUNT": 1,
     "ROOM_SETUP": [
         ["roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid", "roid"],

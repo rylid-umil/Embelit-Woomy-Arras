@@ -3185,7 +3185,9 @@ function RememberScriptingIsBannable() {
                     case 18: 
                         return ["Bounciness", "Bounce Resistance", "", "", "", "", "Acceleration", "Movement Speed", "Shield Regeneration", "Shield Capacity"];
                     case 19: 
-                        return ["Bounciness", "Bounce Resistance", "Drone Speed", "", "", "", "Acceleration and Reload", "Movement Speed", "Shield Regeneration", "Shield Capacity"];
+                        return ["Bounciness", "Bounce Resistance", "Drone Speed", "", "", "", "Acceleration and Respawn Rate", "Movement Speed", "Shield Regeneration", "Shield Capacity"];
+                    case 20: 
+                        return ["Bounciness", "Bounce Resistance", "", "", "", "", "Acceleration and Reload", "Movement Speed", "Shield Regeneration", "Shield Capacity"];
                     default:
                         return ["Body Damage", "Max Health", "Bullet Speed", "Bullet Health", "Bullet Penetration", "Bullet Damage", "Reload", "Movement Speed", "Shield Regeneration", "Shield Capacity"];
                 }

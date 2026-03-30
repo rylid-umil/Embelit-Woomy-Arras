@@ -479,6 +479,7 @@ api.apiEvent.on("tokenData", (data) => {
         "KNOCKBACK_CONSTANT": 1.8,
         "BORDER_FORCE": 0.025,
         "OUTSIDE_ROOM_DAMAGE": 0,
+        "DEFAULT_CLASS": "basic",
         "MAX_SKILL": 9,
         "SOFT_MAX_SKILL": 0.59,
         "REGEN_MULTIPLIER": 0.45,
@@ -1785,14 +1786,8 @@ function getCrptFunction(){
             }
         }
         switch (c.serverName) {
-            case "Squidward's Tiki Land":
-                add(Class.playableAC);
-                break;
-            case "Bounce":
-                add(Class.bouncer);
-                break;
             default:
-                add(Class.basic);
+                add(Class[c.DEFAULT_CLASS]);
         };
         return output;
     })();
@@ -5511,6 +5506,7 @@ function getCrptFunction(){
                 if (set.IS_PLANE != null) this.isPlane = set.IS_PLANE;
                 if (set.TARGET_PLANES != null) this.settings.targetPlanes = set.TARGET_PLANES;
                 if (set.SEE_INVISIBLE != null) this.seeInvisible = set.SEE_INVISIBLE;
+                this.bounceResistance = set.BOUNCE_RESISTANCE ?? 0;
                 this.displayText = set.DISPLAY_TEXT || "";
                 this.displayTextColor = set.DISPLAY_TEXT_COLOR || "#FFFFFF"
                 if (set.AMMO != null) {
@@ -12000,20 +11996,14 @@ function getCrptFunction(){
                             body.define(Class.basic);//body.define(Class[ran.choose(["auto1", "watcher", "caltrop", "microshot"])]);
                         }
                         break;
-                    case "Squidward's Tiki Land":
-                        body.define(startingTank = Class.playableAC);
-                        break;
                     case "Corrupted Tanks":
                         body.upgrade()
                         break;
                     case "Tank Builder":
                         body.define(startingTank = Class.genericTank);
                         break;
-                    case "Bounce":
-                        body.define(startingTank = Class.bouncer);
-                        break;
                     default:
-                        body.define(Class[c.STARTING_TANK] || Class[startingTank]);
+                        body.define(Class[c.DEFAULT_CLASS] || Class[startingTank]);
                 }
                 body.name = name || this.betaData.globalName;
                 body.addController(new ioTypes.listenToPlayer(body, player));
