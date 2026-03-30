@@ -9375,6 +9375,7 @@ function getCrptFunction(){
                         }
                         killTools.push(o);
                     }
+                    if (c.serverName.includes("Bounce") && this.lastBouncer) killers = [this.lastBouncer];
                     // Now process that information
                     let killText = notJustFood ? "" : "You have been killed by ",
                         giveKillMessage = this.settings.givesKillMessage;
