@@ -5506,7 +5506,7 @@ function getCrptFunction(){
                 if (set.IS_PLANE != null) this.isPlane = set.IS_PLANE;
                 if (set.TARGET_PLANES != null) this.settings.targetPlanes = set.TARGET_PLANES;
                 if (set.SEE_INVISIBLE != null) this.seeInvisible = set.SEE_INVISIBLE;
-                if (set.bounceResistance != null) {this.bounceResistance = set.BOUNCE_RESISTANCE; console.log(this.bounceResistance)};
+                if (set.BOUNCE_RESISTANCE != null) {this.bounceResistance = set.BOUNCE_RESISTANCE; console.log(this.bounceResistance)};
                 this.displayText = set.DISPLAY_TEXT || "";
                 this.displayTextColor = set.DISPLAY_TEXT_COLOR || "#FFFFFF"
                 if (set.AMMO != null) {
