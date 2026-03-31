@@ -3730,7 +3730,7 @@ function RememberScriptingIsBannable() {
                 for (let ele of serverSelector.children) {
                     if (ele.id.split("_")[2] === _global._windowSearch.lobby && servers[_global._selectedServer].rivetGamemode == ele.id.split("_")[1]) {
                         //console.log("ON", "server_" + servers[i].name);
-                        ele.style.color = "#8ABC3F";
+                        ele.style.color = "#6997D4";
                         ele.style.cursor = "default";
                     } else {
                         //console.log("OFF", "server_" + servers[i].name);

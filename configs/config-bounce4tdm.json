@@ -1,0 +1,28 @@
+{
+    "MODE": "tdm",
+    "serverName": "Bounce",
+    "TEAM_AMOUNT": 4,
+    "MUSIC_MODE": "bounce",
+    "MUSIC_DELAY": [0, 0],
+    "DEFAULT_CLASS": "bouncer",
+    "ROOM_SETUP": [
+        ["void", "void", "void", "void", "void", "void", "void", "void", "void"],
+        ["void", "void", "void", "void", "void", "void", "void", "void", "void"],
+        ["void", "void", "n_b1", "roid", "norm", "roid", "n_b2", "void", "void"],
+        ["void", "void", "roid", "rock", "nest", "rock", "roid", "void", "void"],
+        ["void", "void", "norm", "nest", "nest", "nest", "norm", "void", "void"],
+        ["void", "void", "roid", "rock", "nest", "rock", "roid", "void", "void"],
+        ["void", "void", "n_b3", "roid", "norm", "roid", "n_b4", "void", "void"],
+        ["void", "void", "void", "void", "void", "void", "void", "void", "void"],
+        ["void", "void", "void", "void", "void", "void", "void", "void", "void"]
+    ],
+    "X_GRID": 9,
+    "Y_GRID": 9,
+    "WIDTH": 5000,
+    "HEIGHT": 5000,
+    "MAX_FOOD": 30,
+    "MAX_NEST_FOOD": 10,
+    "MAX_CRASHERS": 0,
+    "MAX_SANCS": 0,
+    "BOTS": 20
+}
