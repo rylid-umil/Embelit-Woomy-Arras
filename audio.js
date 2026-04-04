@@ -75,7 +75,8 @@ let sounds = [
     ["crasherMayhem", "./resources/music/crasherMayhem.mp3", "music"],
     ["title", "./resources/music/title.mp3", "music"],
     ["aerius", "./resources/music/aerius.mp3", "music"],
-    ["boing", "./resources/music/boing.mp3", "music"]
+    ["boing", "./resources/music/boing.mp3", "music"],
+    ["corruptTanks", "./resources/music/corruptTanks.mp3", "music"]
 ]
 sounds.forEach(function (element) {
     global.newSound(element[0], element[1], element[2])
@@ -151,10 +152,13 @@ function musicLoop() {
                                 musicToPlay = music.aerius;
                                 break;
                             case "crasher":
-                                musicToPlay = music.crasherMayhem
+                                musicToPlay = music.crasherMayhem;
                                 break
                             case "bounce":
-                                musicToPlay = music.boing
+                                musicToPlay = music.boing;
+                            case "corrupt":
+                                musicToPlay = music.corruptTanks;
+                                break;
                         }
                 }
             } else {

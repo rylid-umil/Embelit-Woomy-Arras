@@ -1,6 +1,7 @@
 {
     "MODE": "ffa",
     "serverName": "Corrupted Tanks",
+    "MUSIC_MODE": "corrupt",
     "ROOM_SETUP": [
         ["roid", "norm", "norm", "norm", "rock", "norm", "norm", "norm", "rock", "rock", "norm", "norm", "norm", "rock", "norm", "norm", "norm", "roid"],
         ["norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm", "norm"],
