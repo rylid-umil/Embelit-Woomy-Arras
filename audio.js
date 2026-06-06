@@ -76,7 +76,8 @@ let sounds = [
     ["title", "./resources/music/title.mp3", "music"],
     ["aerius", "./resources/music/aerius.mp3", "music"],
     ["boing", "./resources/music/boing.mp3", "music"],
-    ["corruptTanks", "./resources/music/corruptTanks.mp3", "music"]
+    ["corruptTanks", "./resources/music/corruptTanks.mp3", "music"],
+    ["suddenDeath", "./resources/music/suddenDeath.mp3", "music"]
 ]
 sounds.forEach(function (element) {
     global.newSound(element[0], element[1], element[2])
@@ -156,8 +157,12 @@ function musicLoop() {
                                 break
                             case "bounce":
                                 musicToPlay = music.boing;
+                                break;
                             case "corrupt":
                                 musicToPlay = music.corruptTanks;
+                                break;
+                            case "suddenDeath":
+                                musicToPlay = music.suddenDeath;
                                 break;
                         }
                 }

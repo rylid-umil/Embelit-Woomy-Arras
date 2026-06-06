@@ -8375,13 +8375,14 @@ const makeInstakill = (type, name, options = {}) => {
 
     output.PROPS ??= [];
     output.PROPS.push({
-        POSITION: [0.5, 0, 0, 360 / options.propShape / 2, 1],
+        POSITION: [0.5, 0, 0, 180 / options.propShape, 1],
         SHAPE: options.propShape,
         COLOR: 12
     });
+    output.PROPS.push(makeAura(13))
 
     output.GUNS.forEach(element => {
-        element.PROPERTIES.SHOOT_SETTINGS[5] *= options.damageMult
+        element.PROPERTIES.SHOOT_SETTINGS.damage *= options.damageMult
     })
     return output;
 };
