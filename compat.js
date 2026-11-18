@@ -12,7 +12,7 @@ window.process = {
 async function loadNames() {
     try {
         const response = await fetch("./resources/names.json");
-        global.nameList = await response.json().names;
+        global.nameList = (await response.json()).names;
     } catch(e) {
         console.error("Error with names.json:" + e);
     }

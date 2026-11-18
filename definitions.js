@@ -1,5 +1,5 @@
 window.defExports = {}
-//glitch devs I FIX THEC RASHLOOP BUT U NEED TO FIX THEDISCONNECTING ISSUE BRUH.
+//glitch devs farewell
 // Stats
 convert = (stat) => [stat.reload, stat.recoil, stat.shudder, stat.size, stat.health, stat.damage, stat.pen, stat.speed, stat.maxSpeed, stat.range, stat.density, stat.spray, stat.resist];
 
