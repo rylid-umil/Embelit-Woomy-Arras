@@ -583,7 +583,7 @@ form {
 }
 
 .patreon {
-    width: 45% !important;
+    width: 30% !important;
     animation-name: patreonAnimation;
     animation-iteration-count: infinite;
     animation-duration: 3s;
