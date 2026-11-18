@@ -6159,7 +6159,7 @@ function RememberScriptingIsBannable() {
                         }
                         global.playDeathSound(true);
                         const randomRange = (min, max) => {
-                            return Math.random() * (max - min) + min;
+                            return Math.floor(Math.random() * (max - min + 1)) + min;
                         }
                         global.deathMessage = global.deathMessageList[randomRange(0, global.deathMessageList.length)];
                         global.gameOverMusic();
