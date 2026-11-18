@@ -27071,6 +27071,25 @@ defExports.littleMissile = {
         }
     }]
 };
+defExports.flipLittleMissile = {
+    PARENT: [defExports.bullet],
+    LABEL: 'Spray Missile',
+    INDEPENDENT: true,
+    BODY: {
+        RANGE: 120
+    },
+    GUNS: [{
+        POSITION: [14, 6, 1, 0, 0, 0, 0],
+        PROPERTIES: {
+            AUTOFIRE: true,
+            SHOOT_SETTINGS: combineStats([g.basic, g.skim, g.skim_missile, g.less_recoil]),
+            TYPE: [defExports.bullet, {
+                PERSISTS_AFTER_DEATH: true
+            }],
+            STAT_CALCULATOR: gunCalcNames.thruster
+        }
+    }]
+};
 defExports.bombadierMissile = {
     PARENT: [defExports.bullet],
     LABEL: "Missile",
@@ -202062,6 +202081,24 @@ defExports.instakillBasic = makeInstakill(defExports.basic);
 defExports.instakillTwin = makeInstakill(defExports.twin);
 defExports.instakillFlank = makeInstakill(defExports.flank);
 defExports.instakillMachine = makeInstakill(defExports.machine);
+defExports.flipLauncher = {
+    PARENT: [defExports.genericTank],
+    LABEL: 'Sentryman',
+    DANGER: 6,
+    BODY: {
+        FOV: 1.05
+    },
+    GUNS: [{
+        POSITION: [10, 12, -0.5, 9, 0, 0, 0]
+    }, {
+        POSITION: [17, 13, -0.8, 0, 0, 0, 0],
+        PROPERTIES: {
+            SHOOT_SETTINGS: combineStats([g.basic, g.pound, g.arty, g.arty, g.skim]),
+            TYPE: defExports.flipLittleMissile,
+            STAT_CALCULATOR: gunCalcNames.sustained
+        }
+    }]
+};
 
 
 
@@ -202921,7 +202958,7 @@ defExports.securityPounder.UPGRADES_TIER_3 = [defExports.securityDestroyer, defE
 defExports.kinetic.UPGRADES_TIER_3 = [defExports.shockRifle, defExports.blastMultishot, defExports.packageBomb, defExports.miniNukeShooter, defExports.ionTank, defExports.detCruiser];
 defExports.blastMultishot.UPGRADES_TIER_4 = [defExports.clusterbomber]
 defExports.shockRifle.UPGRADES_TIER_4 = [defExports.antimatRifle, defExports.icbm, defExports.sprite]
-defExports.littleSkimmer.UPGRADES_TIER_3 = [defExports.skimmer, defExports.fatLittleSkimmer, defExports.autoLauncher, defExports.twister, defExports.fieldGun, defExports.rocketeer, defExports.trapLittleSkimmer, defExports.torpedoer, defExports.scythe, defExports.sidewind, defExports.miniTrebuchet, defExports.twinLauncher, defExports.miniNukeShooter, defExports.launcher2, defExports.fastLittleSkimmer, defExports.launcherShield, defExports.dustbowl, defExports.securityLauncher, defExports.flankLauncher, defExports.tankthing, defExports.harp, defExports.beretta, defExports.launchbrid, defExports.trepanner, defExports.miniGuardianLauncher, defExports.surgeon, defExports.bombadier];
+defExports.littleSkimmer.UPGRADES_TIER_3 = [defExports.skimmer, defExports.fatLittleSkimmer, defExports.autoLauncher, defExports.twister, defExports.fieldGun, defExports.rocketeer, defExports.trapLittleSkimmer, defExports.torpedoer, defExports.scythe, defExports.sidewind, defExports.miniTrebuchet, defExports.twinLauncher, defExports.flipLauncher, defExports.miniNukeShooter, defExports.launcher2, defExports.fastLittleSkimmer, defExports.launcherShield, defExports.dustbowl, defExports.securityLauncher, defExports.flankLauncher, defExports.tankthing, defExports.harp, defExports.beretta, defExports.launchbrid, defExports.trepanner, defExports.miniGuardianLauncher, defExports.surgeon, defExports.bombadier];
 defExports.obliterator.UPGRADES_TIER_3 = [defExports.bulldozer, defExports.crusher, defExports.heavyRifle, defExports.plow, defExports.steamroll, defExports.denseObliterator, defExports.hotshot, defExports.snipeBuilder, defExports.flankObliterator, defExports.heavyTwinSniper, defExports.autoObliterator, defExports.nunchuck, defExports.buckshot, defExports.sidewind, defExports.devastator, defExports.aagun, defExports.scorpion, defExports.megaClicker, defExports.claymore, defExports.obliterator2, defExports.shatter, defExports.ouch, defExports.shockRifle];
 defExports.multishot.UPGRADES_TIER_3 = [defExports.shotgun, defExports.buckshot, defExports.machshot, defExports.musket, defExports.manyshot, defExports.autoMultishot, defExports.claymore, defExports.quarry, defExports.vibrancy, defExports.hybridMultishot, defExports.swarmShotgun, defExports.blastMultishot];
 defExports.hybridPound.UPGRADES_TIER_3 = [defExports.hybrid, defExports.hybridBuilder, defExports.crusher, defExports.hybridArtillery, defExports.hybridDiepSpreadling, defExports.poundOverdrive, defExports.underPounder, defExports.hybridMultishot, defExports.hybridHeavyTwin, defExports.ecchymosis, defExports.launchbrid, defExports.megaTrapbrid];
