@@ -14,7 +14,7 @@ async function loadLists() {
         const response = await fetch("./resources/names.json");
         global.nameList = (await response.json()).names;
         const response2 = await fetch("./resources/deathMessages.json");
-        global.deathMessageList = (await response.json()).messages;
+        global.deathMessageList = (await response2.json()).messages;
     } catch(e) {
         console.error("Error with json text list loading:" + e);
     }
