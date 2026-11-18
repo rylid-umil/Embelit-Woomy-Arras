@@ -6161,7 +6161,7 @@ function RememberScriptingIsBannable() {
                         const randomRange = (min, max) => {
                             return Math.floor(Math.random() * (max - min + 1)) + min;
                         }
-                        global.deathMessage = global.deathMessageList[randomRange(0, global.deathMessageList.length)];
+                        global.deathMessage = global.deathMessageList[randomRange(0, global.deathMessageList.length - 1)];
                         global.gameOverMusic();
                         _global.finalScore = Smoothbar(0);
                         _global.finalScore.set(m[0]);
