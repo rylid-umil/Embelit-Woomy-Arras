@@ -6158,6 +6158,10 @@ function RememberScriptingIsBannable() {
                             };
                         }
                         global.playDeathSound(true);
+                        const randomRange = (min, max) => {
+                            return Math.random() * (max - min) + min;
+                        }
+                        global.deathMessage = global.deathMessageList[randomRange(0, global.deathMessageList.length)];
                         global.gameOverMusic();
                         _global.finalScore = Smoothbar(0);
                         _global.finalScore.set(m[0]);
@@ -9947,7 +9951,7 @@ function RememberScriptingIsBannable() {
             drawText(getKills(), (x - 170), (y + 77) * getGlide(), 16, color.guiwhite);
             drawText(getDeath(), (x - 170), (y + 99) * getGlide(), 16, color.guiwhite);
             drawText("⌚ Died on " + _global.deathDate, (x - 170), (y + 121) * getGlide(), 16, color.guiwhite);
-            drawText("🍝 This run is ravioli approved 👍", (x - 170), (y + 142) * getGlide(), 16, color.guiwhite);
+            drawText(deathMessage, (x - 170), (y + 142) * getGlide(), 16, color.guiwhite);
             drawText(delay > 0 ? "You may respawn in " + delay + " second" + (delay === 1 ? "" : "s") + "." : "Press enter to respawn!", x, (y + 169/*nice*/) * getGlide(), 16, color.guiwhite, "center");
             _global._forceTwiggle = false;
         };

@@ -9,15 +9,17 @@ window.process = {
     argv: []
 }
 
-async function loadNames() {
+async function loadLists() {
     try {
         const response = await fetch("./resources/names.json");
         global.nameList = (await response.json()).names;
+        const response2 = await fetch("./resources/deathMessages.json");
+        global.deathMessageList = (await response.json()).messages;
     } catch(e) {
-        console.error("Error with names.json:" + e);
+        console.error("Error with json text list loading:" + e);
     }
 }
-loadNames();
+loadLists();
 
 window.serverMessage = () => {}
 window.serverSocket = () => {
