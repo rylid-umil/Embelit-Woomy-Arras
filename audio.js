@@ -104,7 +104,7 @@ global.stopAllAudio = function (source) {
         element[1].src.currentTime = element[1].src.duration; // end the audio - this causes the ended Event to be activated instead of the paused one.
         element[1].src.paused = true;
         } catch (e) {
-            console.log("stupid " + element[1].name + " decided to kill itself on me >:(")
+            console.log("stupid " + element[1].name + " decided to kill itself on me >:( " + e)
         };
     });
 };
