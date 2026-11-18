@@ -317,7 +317,7 @@ window.require = (thing) => {
             }
         break;
         case "./lib/random":
-            const names = global.namesList;
+            const names = global.nameList;
             const randomRange = (min, max) => {
                     return Math.random() * (max - min) + min;
                 }
