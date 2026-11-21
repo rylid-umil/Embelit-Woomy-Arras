@@ -18205,7 +18205,7 @@ defExports.crasher = {
 };
 defExports.eggCrasher = {
     PARENT: [defExports.crasher],
-    LABEL: 'Boil',
+    LABEL: 'Boil', // B O I L
     BODY: {
         HEALTH: 1,
         DAMAGE: 3,
@@ -18217,7 +18217,8 @@ defExports.eggCrasher = {
     SHAPE: 0,
     EVOLUTIONS: [
         ["eggCrasher", 20],
-        ["summonerSquare", 80],
+        ["summonerSquare", 70],
+        ["scoutAI", 10]
     ],
 };
 defExports.triangleCrasher = {
@@ -18235,10 +18236,10 @@ defExports.triangleCrasher = {
     EVOLUTIONS: [
         ["triangleCrasher", 20],
         ["bladeCrasher", 40],
-        ["pentagonCrasher", 40],
+        ["pentagonCrasher", 30],
+        ["vedetteAI", 10]
     ],
 };
-
 defExports.pentagonCrasher = {
     PARENT: [defExports.crasher],
     LABEL: 'Smacker', // changed because its original name was "slapper" which can be confused with a very innapropriate word.
@@ -18253,7 +18254,8 @@ defExports.pentagonCrasher = {
     SHAPE: 5,
     EVOLUTIONS: [
         ["pentagonCrasher", 60],
-        ["hexagonCrasher", 40]
+        ["hexagonCrasher", 30],
+        ["sentinelAI", 10]
     ],
 };
 defExports.hexagonCrasher = {
@@ -18270,7 +18272,8 @@ defExports.hexagonCrasher = {
     SHAPE: 6,
     EVOLUTIONS: [
         ["hexagonCrasher", 60],
-        ["heptagonCrasger", 40]
+        ["heptagonCrasher", 30],
+        ["outpostAI", 10]
     ],
 };
 defExports.heptagonCrasher = {
@@ -133699,7 +133702,8 @@ defExports.summonerSquare = {
         ['busterCrasher', 20],
         ['obsidianSquare', 1],
         ['ivorySquare', 1],
-        ['tetraBlades', 6]
+        ['tetraBlades', 6],
+        ['convoySpawn', 5]
     ]
 };
 defExports.greensummonerSquare = {
@@ -202083,7 +202087,7 @@ defExports.instakillFlank = makeInstakill(defExports.flank);
 defExports.instakillMachine = makeInstakill(defExports.machine);
 defExports.flipLauncher = {
     PARENT: [defExports.genericTank],
-    LABEL: 'Sentryman',
+    LABEL: 'Deployer',
     DANGER: 6,
     BODY: {
         FOV: 1.05
